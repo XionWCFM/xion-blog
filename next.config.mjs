@@ -1,4 +1,12 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {};
+import { withContentlayer } from 'next-contentlayer';
 
-export default nextConfig;
+const nextConfig = {
+  reactStrictMode: true,
+  swcMinify: true,
+  webpack: (config) => {
+    config.cache = false;
+    return config;
+  },
+};
+
+export default withContentlayer(nextConfig);
