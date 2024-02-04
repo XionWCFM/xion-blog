@@ -2,14 +2,14 @@ import { format, parseISO } from 'date-fns';
 import { allPosts } from 'contentlayer/generated';
 import { notFound } from 'next/navigation';
 import Mdx from '@/src/shared/common-ui/markdown/mdx';
-import { postHelper } from '@/src/features/post';
+import { createStaticParam, getPost } from '@/src/features/post';
 
 export const generateStaticParams = async () => {
-  return postHelper.createStaticParam(allPosts);
+  return createStaticParam(allPosts);
 };
 
 const PostLayout = ({ params }: { params: { slug: string[] } }) => {
-  const post = postHelper.getPost(allPosts, params.slug);
+  const post = getPost(allPosts, params.slug);
   if (!post) notFound();
 
   return (

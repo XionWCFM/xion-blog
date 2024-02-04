@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { compareDesc, format, parseISO } from 'date-fns';
 import { allPosts, Post } from 'contentlayer/generated';
+import { getAllPost } from '@/src/features';
 function PostCard(post: Post) {
   return (
     <div className="mb-8">
@@ -20,9 +21,7 @@ function PostCard(post: Post) {
 }
 
 export default function Home() {
-  const posts = allPosts.sort((a, b) =>
-    compareDesc(new Date(a.date), new Date(b.date)),
-  );
+  const posts = getAllPost(allPosts);
 
   return (
     <div className="">
