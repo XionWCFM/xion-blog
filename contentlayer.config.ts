@@ -3,6 +3,7 @@ import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 import rehypePrettyCode from 'rehype-pretty-code';
 import rehypeSlug from 'rehype-slug';
 import remarkGfm from 'remark-gfm';
+import { CATEGORIES } from './src/entities/categories';
 
 export const Post = defineDocumentType(() => ({
   name: 'Post',
@@ -14,7 +15,7 @@ export const Post = defineDocumentType(() => ({
     description: { type: 'string', required: true },
     categories: {
       type: 'enum',
-      options: ['react', 'nextjs', 'css', 'javascript', 'typescript'],
+      options: CATEGORIES,
       default: 'react',
       required: true,
     },

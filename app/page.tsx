@@ -13,7 +13,7 @@ function PostCard(post: Post) {
         </Link>
       </h2>
       <time dateTime={post.date} className="mb-2 block text-xs text-gray-600">
-        {format(parseISO(post.date), 'LLLL d, yyyy')}
+        {format(parseISO(post.date), 'yyyy.MM.dd')}
       </time>
     </div>
   );
