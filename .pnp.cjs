@@ -26,6 +26,7 @@ const RAW_RUNTIME_STATE =
       [null, {\
         "packageLocation": "./",\
         "packageDependencies": [\
+          ["@radix-ui/react-icons", "virtual:c6dcce817fa225290e033ab3df9d032741dc228bb28c9cbb4719875ef6095c1c8f4a1ecb6d1cce6f1119ad7c9bb93c31bc307a4e235fab5627d039ca42e55b65#npm:1.3.0"],\
           ["@types/node", "npm:20.11.16"],\
           ["@types/react", "npm:18.2.52"],\
           ["@types/react-dom", "npm:18.2.18"],\
@@ -1523,6 +1524,28 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["@radix-ui/react-icons", [\
+      ["npm:1.3.0", {\
+        "packageLocation": "../../.yarn/berry/cache/@radix-ui-react-icons-npm-1.3.0-2aeeb348f1-10c0.zip/node_modules/@radix-ui/react-icons/",\
+        "packageDependencies": [\
+          ["@radix-ui/react-icons", "npm:1.3.0"]\
+        ],\
+        "linkType": "SOFT"\
+      }],\
+      ["virtual:c6dcce817fa225290e033ab3df9d032741dc228bb28c9cbb4719875ef6095c1c8f4a1ecb6d1cce6f1119ad7c9bb93c31bc307a4e235fab5627d039ca42e55b65#npm:1.3.0", {\
+        "packageLocation": "./.yarn/__virtual__/@radix-ui-react-icons-virtual-c3e94a387e/3/.yarn/berry/cache/@radix-ui-react-icons-npm-1.3.0-2aeeb348f1-10c0.zip/node_modules/@radix-ui/react-icons/",\
+        "packageDependencies": [\
+          ["@radix-ui/react-icons", "virtual:c6dcce817fa225290e033ab3df9d032741dc228bb28c9cbb4719875ef6095c1c8f4a1ecb6d1cce6f1119ad7c9bb93c31bc307a4e235fab5627d039ca42e55b65#npm:1.3.0"],\
+          ["@types/react", "npm:18.2.52"],\
+          ["react", "npm:18.2.0"]\
+        ],\
+        "packagePeers": [\
+          "@types/react",\
+          "react"\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["@rushstack/eslint-patch", [\
       ["npm:1.7.2", {\
         "packageLocation": "../../.yarn/berry/cache/@rushstack-eslint-patch-npm-1.7.2-e0ac536367-10c0.zip/node_modules/@rushstack/eslint-patch/",\
@@ -2331,6 +2354,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./",\
         "packageDependencies": [\
           ["blog", "workspace:."],\
+          ["@radix-ui/react-icons", "virtual:c6dcce817fa225290e033ab3df9d032741dc228bb28c9cbb4719875ef6095c1c8f4a1ecb6d1cce6f1119ad7c9bb93c31bc307a4e235fab5627d039ca42e55b65#npm:1.3.0"],\
           ["@types/node", "npm:20.11.16"],\
           ["@types/react", "npm:18.2.52"],\
           ["@types/react-dom", "npm:18.2.18"],\

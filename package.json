@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@radix-ui/react-icons": "^1.3.0",
     "@xionhub/assert": "^0.1.0",
     "@xionhub/pubsub": "^0.1.0",
     "@xionhub/react-hook": "^1.0.0",
