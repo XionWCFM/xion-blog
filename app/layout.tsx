@@ -1,4 +1,6 @@
 import type { Metadata } from 'next';
+import { XION_NEXT_FONT } from '@/src/app/style/font';
+
 import './globals.css';
 
 export const metadata: Metadata = {
@@ -13,7 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className={XION_NEXT_FONT.className}>{children}</body>
     </html>
   );
 }
