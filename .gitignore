@@ -45,3 +45,5 @@ next-env.d.ts
 .vscode
 
 .contentlayer
+# Sentry Config File
+.sentryclirc
