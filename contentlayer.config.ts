@@ -18,21 +18,12 @@ export const Post = defineDocumentType(() => ({
       default: 'react',
       required: true,
     },
-    id: { type: 'string', required: true },
     published: { type: 'boolean', required: true, default: true },
   },
   computedFields: {
     url: {
       type: 'string',
       resolve: (post) => `/posts/${post._raw.flattenedPath}`,
-    },
-    slug: {
-      type: 'string',
-      resolve: (doc) => `/${doc._raw.flattenedPath}`,
-    },
-    slugAsParams: {
-      type: 'string',
-      resolve: (doc) => doc._raw.flattenedPath.split('/').slice(1).join('/'),
     },
   },
 }));
