@@ -9,6 +9,7 @@ export const DarkModeButton = () => {
   React.useEffect(() => setMounted(true), []);
   return (
     <button
+      className=" flex justify-center items-center text-foreground/50"
       onClick={() => {
         if (theme === 'dark') {
           setTheme('light');
