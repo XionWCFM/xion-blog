@@ -29,6 +29,7 @@ const RAW_RUNTIME_STATE =
           ["@next/third-parties", "virtual:c6dcce817fa225290e033ab3df9d032741dc228bb28c9cbb4719875ef6095c1c8f4a1ecb6d1cce6f1119ad7c9bb93c31bc307a4e235fab5627d039ca42e55b65#npm:14.1.0"],\
           ["@radix-ui/react-icons", "virtual:c6dcce817fa225290e033ab3df9d032741dc228bb28c9cbb4719875ef6095c1c8f4a1ecb6d1cce6f1119ad7c9bb93c31bc307a4e235fab5627d039ca42e55b65#npm:1.3.0"],\
           ["@sentry/nextjs", "virtual:c6dcce817fa225290e033ab3df9d032741dc228bb28c9cbb4719875ef6095c1c8f4a1ecb6d1cce6f1119ad7c9bb93c31bc307a4e235fab5627d039ca42e55b65#npm:7.99.0"],\
+          ["@toss/hangul", "npm:1.6.1"],\
           ["@types/node", "npm:20.11.16"],\
           ["@types/react", "npm:18.2.52"],\
           ["@types/react-dom", "npm:18.2.18"],\
@@ -2100,6 +2101,15 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["@toss/hangul", [\
+      ["npm:1.6.1", {\
+        "packageLocation": "../../.yarn/berry/cache/@toss-hangul-npm-1.6.1-0d8cee88fa-10c0.zip/node_modules/@toss/hangul/",\
+        "packageDependencies": [\
+          ["@toss/hangul", "npm:1.6.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["@types/acorn", [\
       ["npm:4.0.6", {\
         "packageLocation": "../../.yarn/berry/cache/@types-acorn-npm-4.0.6-a81a5c57b1-10c0.zip/node_modules/@types/acorn/",\
@@ -2891,6 +2901,7 @@ const RAW_RUNTIME_STATE =
           ["@next/third-parties", "virtual:c6dcce817fa225290e033ab3df9d032741dc228bb28c9cbb4719875ef6095c1c8f4a1ecb6d1cce6f1119ad7c9bb93c31bc307a4e235fab5627d039ca42e55b65#npm:14.1.0"],\
           ["@radix-ui/react-icons", "virtual:c6dcce817fa225290e033ab3df9d032741dc228bb28c9cbb4719875ef6095c1c8f4a1ecb6d1cce6f1119ad7c9bb93c31bc307a4e235fab5627d039ca42e55b65#npm:1.3.0"],\
           ["@sentry/nextjs", "virtual:c6dcce817fa225290e033ab3df9d032741dc228bb28c9cbb4719875ef6095c1c8f4a1ecb6d1cce6f1119ad7c9bb93c31bc307a4e235fab5627d039ca42e55b65#npm:7.99.0"],\
+          ["@toss/hangul", "npm:1.6.1"],\
           ["@types/node", "npm:20.11.16"],\
           ["@types/react", "npm:18.2.52"],\
           ["@types/react-dom", "npm:18.2.18"],\
