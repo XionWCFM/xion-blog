@@ -10,6 +10,7 @@ const config: Config = {
   ],
   theme: {
     ...XION_STYLE,
+    colors: XION_STYLE.colors,
     extend: {},
   },
   plugins: [xionPlugin],

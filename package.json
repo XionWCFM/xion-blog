@@ -13,7 +13,7 @@
     "@xionhub/pubsub": "^0.1.0",
     "@xionhub/react-hook": "^1.0.0",
     "@xionhub/tailwind-plugin": "^0.1.0",
-    "@xionhub/token": "^0.1.1",
+    "@xionhub/token": "^0.1.3",
     "@xionhub/util": "^0.1.0",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.0",

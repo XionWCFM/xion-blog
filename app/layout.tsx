@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { XION_NEXT_FONT } from '@/src/app/style/font';
 import './globals.css';
+import Layout from '@/src/shared/common-ui/layout';
 
 export const metadata: Metadata = {
   title: 'xion blog',
@@ -13,8 +14,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={XION_NEXT_FONT.className}>{children}</body>
+    <html lang="ko">
+      <body className={XION_NEXT_FONT.className}>
+        <Layout>{children}</Layout>
+      </body>
     </html>
   );
 }
