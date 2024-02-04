@@ -423,6 +423,50 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@xionhub/assert@npm:^0.1.0":
+  version: 0.1.0
+  resolution: "@xionhub/assert@npm:0.1.0"
+  checksum: 10c0/8c7c2525c136c10a95cd8a2413176d272cd398c6a881c0eae325b90572fea9e23d31202b7538d904f9033107493163bc003ae53ce13c89c86b93977ce751dd5a
+  languageName: node
+  linkType: hard
+
+"@xionhub/react-hook@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "@xionhub/react-hook@npm:1.0.0"
+  dependencies:
+    date-fns: "npm:>=2.0.0"
+  peerDependencies:
+    "@xionhub/util": ">=0.1.0"
+    date-fns: ">=2.0.0"
+    react: ">=18.0.0"
+    react-dom: ">=18.0.0"
+  checksum: 10c0/10bc1f040a7d0a1e427cf864ed07d1843292c0d81d4fd335d9fcd4a8c4d6f21f452754d76002cfda558252d92440413deea3eaec091e3dcb9c2103ab74bf2ee2
+  languageName: node
+  linkType: hard
+
+"@xionhub/tailwind-plugin@npm:^0.1.0":
+  version: 0.1.0
+  resolution: "@xionhub/tailwind-plugin@npm:0.1.0"
+  peerDependencies:
+    tailwindcss: ">=3.0.0"
+  checksum: 10c0/a4e1ab21dac5a4555449058a1db7b54e20d3304d891b01afeb320b9cbbeb25908db0bf76302c818adcdaffd4dc03055d3d7b1512769a1d8491964544f89d21b7
+  languageName: node
+  linkType: hard
+
+"@xionhub/token@npm:^0.1.1":
+  version: 0.1.1
+  resolution: "@xionhub/token@npm:0.1.1"
+  checksum: 10c0/96a1215de16f387e18e62e3fc8376363acfec93766bdd7a9974775f58c95625323361fa67fd3b822f21a7b05f91884b28390416cf130f431a76e4815a58beacc
+  languageName: node
+  linkType: hard
+
+"@xionhub/util@npm:^0.1.0":
+  version: 0.1.0
+  resolution: "@xionhub/util@npm:0.1.0"
+  checksum: 10c0/de7d6e0814cd3700bc44131f7258e59ad3ac90092abf30c7f72de7461566894e48a9b5f767b3b4289470961833e85d8c22cbc1cceb3b3d283fd7ee066010ebc4
+  languageName: node
+  linkType: hard
+
 "abbrev@npm:^2.0.0":
   version: 2.0.0
   resolution: "abbrev@npm:2.0.0"
@@ -722,6 +766,11 @@ __metadata:
     "@types/node": "npm:^20"
     "@types/react": "npm:^18"
     "@types/react-dom": "npm:^18"
+    "@xionhub/assert": "npm:^0.1.0"
+    "@xionhub/react-hook": "npm:^1.0.0"
+    "@xionhub/tailwind-plugin": "npm:^0.1.0"
+    "@xionhub/token": "npm:^0.1.1"
+    "@xionhub/util": "npm:^0.1.0"
     autoprefixer: "npm:^10.0.1"
     eslint: "npm:^8"
     eslint-config-next: "npm:14.1.0"
@@ -948,6 +997,13 @@ __metadata:
   version: 1.0.8
   resolution: "damerau-levenshtein@npm:1.0.8"
   checksum: 10c0/4c2647e0f42acaee7d068756c1d396e296c3556f9c8314bac1ac63ffb236217ef0e7e58602b18bb2173deec7ec8e0cac8e27cccf8f5526666b4ff11a13ad54a3
+  languageName: node
+  linkType: hard
+
+"date-fns@npm:>=2.0.0":
+  version: 3.3.1
+  resolution: "date-fns@npm:3.3.1"
+  checksum: 10c0/e04ff79244010e03b912d791cd3250af5f18866ce868604958d76bd87e5fb0b79f0a810b8e7066248452b41779b288c4fd21de1cac2cd4b6d384e9dd931c9674
   languageName: node
   linkType: hard
 
