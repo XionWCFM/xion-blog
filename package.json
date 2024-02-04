@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "push": "git push origin $(git symbolic-ref --short HEAD)"
   },
   "dependencies": {
     "@radix-ui/react-icons": "^1.3.0",
