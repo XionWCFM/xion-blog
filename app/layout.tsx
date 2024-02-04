@@ -1,9 +1,10 @@
-import type { Metadata } from 'next';
-import { XION_NEXT_FONT } from '@/src/app/style/font';
 import './globals.css';
 import Layout from '@/src/shared/common-ui/layout';
-import { DarkModeProvider } from '@/src/app/provider/dark-mode-provider';
 
+import type { Metadata } from 'next';
+import { XION_NEXT_FONT } from '@/src/app/style/font';
+import { DarkModeProvider } from '@/src/app/provider/dark-mode-provider';
+import { GoogleTagManager, GoogleAnalytics } from '@next/third-parties/google';
 export const metadata: Metadata = {
   title: 'xion blog',
   description: 'xion blog',
