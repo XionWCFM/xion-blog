@@ -1,6 +1,6 @@
 import './globals.css';
 import Layout from '@/src/shared/common-ui/layout';
-
+import { Analytics } from '@vercel/analytics/react';
 import type { Metadata } from 'next';
 import { XION_NEXT_FONT } from '@/src/app/style/font';
 import { DarkModeProvider } from '@/src/app/provider/dark-mode-provider';
@@ -21,6 +21,7 @@ export default function RootLayout({
         <DarkModeProvider>
           <Layout>{children}</Layout>
         </DarkModeProvider>
+        <Analytics />
       </body>
     </html>
   );

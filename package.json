@@ -16,6 +16,7 @@
     "@sentry/nextjs": "^7.99.0",
     "@sentry/utils": "^7.99.0",
     "@toss/hangul": "^1.6.1",
+    "@vercel/analytics": "^1.1.2",
     "@xionhub/assert": "^0.1.0",
     "@xionhub/pubsub": "^0.1.0",
     "@xionhub/react-hook": "^1.0.0",

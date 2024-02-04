@@ -34,6 +34,7 @@ const RAW_RUNTIME_STATE =
           ["@types/node", "npm:20.11.16"],\
           ["@types/react", "npm:18.2.52"],\
           ["@types/react-dom", "npm:18.2.18"],\
+          ["@vercel/analytics", "npm:1.1.2"],\
           ["@xionhub/assert", "npm:0.1.0"],\
           ["@xionhub/logger", "npm:0.1.0"],\
           ["@xionhub/pubsub", "npm:0.1.0"],\
@@ -2398,6 +2399,16 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["@vercel/analytics", [\
+      ["npm:1.1.2", {\
+        "packageLocation": "../../.yarn/berry/cache/@vercel-analytics-npm-1.1.2-cdbea53b32-10c0.zip/node_modules/@vercel/analytics/",\
+        "packageDependencies": [\
+          ["@vercel/analytics", "npm:1.1.2"],\
+          ["server-only", "npm:0.0.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["@xionhub/assert", [\
       ["npm:0.1.0", {\
         "packageLocation": "../../.yarn/berry/cache/@xionhub-assert-npm-0.1.0-c188e6b5f1-10c0.zip/node_modules/@xionhub/assert/",\
@@ -2907,6 +2918,7 @@ const RAW_RUNTIME_STATE =
           ["@types/node", "npm:20.11.16"],\
           ["@types/react", "npm:18.2.52"],\
           ["@types/react-dom", "npm:18.2.18"],\
+          ["@vercel/analytics", "npm:1.1.2"],\
           ["@xionhub/assert", "npm:0.1.0"],\
           ["@xionhub/logger", "npm:0.1.0"],\
           ["@xionhub/pubsub", "npm:0.1.0"],\
@@ -8643,6 +8655,15 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["semver", "npm:7.5.4"],\
           ["lru-cache", "npm:6.0.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["server-only", [\
+      ["npm:0.0.1", {\
+        "packageLocation": "../../.yarn/berry/cache/server-only-npm-0.0.1-24bf42bde2-10c0.zip/node_modules/server-only/",\
+        "packageDependencies": [\
+          ["server-only", "npm:0.0.1"]\
         ],\
         "linkType": "HARD"\
       }]\
