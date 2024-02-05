@@ -1,5 +1,5 @@
 import './globals.css';
-import Layout from '@/src/shared/common-ui/layout';
+import Layout from '@/src/widget/layout';
 import { Analytics } from '@vercel/analytics/react';
 import type { Metadata } from 'next';
 import { XION_NEXT_FONT } from '@/src/app/style/font';

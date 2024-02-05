@@ -4,7 +4,7 @@ import {
   PersonIcon,
 } from '@radix-ui/react-icons';
 import Link from 'next/link';
-import { EXTERNAL_URL } from '../../constant/external/url';
+import { EXTERNAL_URL } from '../../shared/constant/external/url';
 export const Footer = () => {
   return (
     <footer className=" w-full h-256 flex justify-center items-end pb-24">
