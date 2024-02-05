@@ -1,8 +1,8 @@
 import { format, parseISO } from 'date-fns';
 import { allPosts } from 'contentlayer/generated';
 import { notFound } from 'next/navigation';
-import Mdx from '@/src/features/post/ui/mdx';
-import { createStaticParam, getPost } from '@/src/features/post/model/service';
+import Mdx from '@/src/entities/post/ui/mdx';
+import { createStaticParam, getPost } from '@/src/entities/post/model/service';
 
 export const generateStaticParams = async () => {
   return createStaticParam(allPosts);

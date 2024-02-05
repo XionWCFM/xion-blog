@@ -1,9 +1,4 @@
-export const CATEGORIES = [
-  'react',
-  'nextjs',
-  'javascript',
-  'css',
-  'typescript',
-] as const;
+import { Categories, CATEGORIES } from './model/model';
+import { filterByCategory } from './model/service';
 
-export type Categories = (typeof CATEGORIES)[number];
+export { type Categories, CATEGORIES, filterByCategory };
