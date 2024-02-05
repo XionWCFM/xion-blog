@@ -12,14 +12,14 @@ export type ACTION = 'click' | 'page';
 
 export const glue = '_' as const;
 type GLUE = typeof glue;
-export type GaEvent = LogEventCreator<
+export type BlogEvent = LogEventCreator<
   FEATURE,
   PAGE,
   AT,
   TARGET,
   ACTION,
   {
-    type: 'GA_EVENT';
+    type: 'BLOG_EVENT';
   },
   GLUE
 >;
