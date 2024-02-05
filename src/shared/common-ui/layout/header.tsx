@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { PATH } from '../../constant/path';
-import { DarkModeButton } from '../darkmode/dark-mode-button';
+import { DarkModeButton } from '../../../features/darkmode/dark-mode-button';
 
 export const Header = () => {
   return (
