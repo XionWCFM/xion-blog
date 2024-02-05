@@ -1,2 +1,2 @@
-import { SideBar } from './ui';
+import { SideBar } from './ui/side-bar';
 export { SideBar };
