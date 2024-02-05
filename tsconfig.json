@@ -19,13 +19,8 @@
       }
     ],
     "paths": {
-      "@/*": ["./*"],
       "contentlayer/generated": ["./.contentlayer/generated"],
-      "@/fsd/app": ["./src/app/*"],
-      "@/fsd/entities": ["./src/entities/*"],
-      "@/fsd/features": ["./src/features/*"],
-      "@/fsd/shared": ["./src/shared/*"],
-      "@/fsd/widget": ["./src/widget/*"]
+      "@/*": ["./*"]
     }
   },
   "include": [
