@@ -4,7 +4,7 @@ import { Analytics } from '@vercel/analytics/react';
 import type { Metadata } from 'next';
 import { XION_NEXT_FONT } from '@/src/app/style/font';
 import { GoogleTagManager, GoogleAnalytics } from '@next/third-parties/google';
-import { ENV } from '@/src/shared/constant/environment';
+import { ENV } from '@/src/shared/config';
 import { Providers } from '@/src/app/provider/providers';
 export const metadata: Metadata = {
   title: 'xion blog',

@@ -1,5 +1,5 @@
 import React from 'react';
-import { cn } from '../../lib/style/cn';
+import { cn } from '../../util/cn';
 
 interface InputProps extends React.ComponentPropsWithoutRef<'input'> {}
 export const Input = React.forwardRef(
