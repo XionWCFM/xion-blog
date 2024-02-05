@@ -1,7 +1,7 @@
 import { useMDXComponent } from 'next-contentlayer/hooks';
 import Image from 'next/image';
 import * as React from 'react';
-import { cn } from '../../lib/cn';
+import { cn } from '../../lib/style/cn';
 
 const components = {
   h1: ({ className, ...props }: React.HTMLAttributes<HTMLHeadingElement>) => (
