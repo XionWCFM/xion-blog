@@ -22,7 +22,6 @@ export default function RootLayout({
         <Providers>
           <Layout>{children}</Layout>
         </Providers>
-
         <Analytics />
         <GoogleTagManager gtmId={ENV.gtmId} />
         <GoogleAnalytics gaId={ENV.gaId} />
