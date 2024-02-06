@@ -1,4 +1,3 @@
-import { cn } from '@/src/shared/common-ui/cn';
 import { useMDXComponent } from 'next-contentlayer/hooks';
 import Image from 'next/image';
 import * as React from 'react';
@@ -7,7 +6,7 @@ const components = {
   h1: ({ className, ...props }: React.HTMLAttributes<HTMLHeadingElement>) => (
     <h1
       className={
-        ' text-[calc(0.875rem*1.75)] font-header-1 leading-header-1 text-foreground/90 '
+        ' text-header-1 font-header-1 leading-header-1 text-foreground/90 '
       }
       {...props}
     />
@@ -23,7 +22,7 @@ const components = {
   h3: ({ className, ...props }: React.HTMLAttributes<HTMLHeadingElement>) => (
     <h3
       className={
-        ' text-header-2 font-header-2 leading-header-2 text-foreground/90'
+        ' text-header-3 font-header-3 leading-header-3 text-foreground/90'
       }
       {...props}
     />
@@ -31,7 +30,7 @@ const components = {
   h4: ({ className, ...props }: React.HTMLAttributes<HTMLHeadingElement>) => (
     <h4
       className={
-        ' text-header-2 font-header-2 leading-header-2 text-foreground/90'
+        ' text-header-3 font-header-3 leading-header-3 text-foreground/90'
       }
       {...props}
     />
@@ -39,7 +38,7 @@ const components = {
   h5: ({ className, ...props }: React.HTMLAttributes<HTMLHeadingElement>) => (
     <h5
       className={
-        ' text-header-2 font-header-2 leading-header-2 text-foreground/90'
+        ' text-header-3 font-header-3 leading-header-3 text-foreground/90'
       }
       {...props}
     />
@@ -47,11 +46,12 @@ const components = {
   h6: ({ className, ...props }: React.HTMLAttributes<HTMLHeadingElement>) => (
     <h6
       className={
-        ' text-header-2 font-header-2 leading-header-2 text-foreground/90'
+        ' text-header-3 font-header-3 leading-header-3 text-foreground/90'
       }
       {...props}
     />
   ),
+
   a: ({
     className,
     ...props
@@ -65,7 +65,7 @@ const components = {
     />
   ),
   p: ({ className, ...props }: React.HTMLAttributes<HTMLParagraphElement>) => (
-    <span className={' text-body-1 font-body-1 leading-body-1'} {...props} />
+    <span className={' text-body-4 font-body-4 leading-body-4'} {...props} />
   ),
   ul: ({ className, ...props }: React.HTMLAttributes<HTMLUListElement>) => (
     <ul className={'my-6 ml-6 list-disc '} {...props} />
@@ -98,7 +98,9 @@ const components = {
       />
     </div>
   ),
-  hr: ({ ...props }) => <hr className="my-4 md:my-8" {...props} />,
+  hr: ({ ...props }) => (
+    <hr className="my-8 border-t border-foreground/10" {...props} />
+  ),
   table: ({ className, ...props }: React.HTMLAttributes<HTMLTableElement>) => (
     <div className="my-6 w-full overflow-y-auto">
       <table className={'w-full'} {...props} />

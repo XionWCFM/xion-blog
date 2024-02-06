@@ -20,8 +20,10 @@ const PostLayout = ({ params }: { params: { slug: string[] } }) => {
         </time>
         <h1 className="text-3xl font-bold">{post.title}</h1>
       </div>
-      <div className=" bg-primary-50 ">
-        <Mdx code={post.body.code} />
+      <div className=" flex justify-center items-center">
+        <div className=" w-1024 flex flex-col justify-center ">
+          <Mdx code={post.body.code} />
+        </div>
       </div>
     </article>
   );
