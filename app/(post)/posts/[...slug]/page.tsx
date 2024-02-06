@@ -13,17 +13,15 @@ const PostLayout = ({ params }: { params: { slug: string[] } }) => {
   if (!post) notFound();
 
   return (
-    <article className="">
+    <article className=" w-1024 flex justify-center items-center flex-col">
       <div className="mb-8 ">
         <time dateTime={post.date} className="mb-1 text-xs text-gray-600">
           {format(parseISO(post.date), 'yyyy.MM.dd')}
         </time>
         <h1 className="text-3xl font-bold">{post.title}</h1>
       </div>
-      <div className=" flex justify-center items-center">
-        <div className=" w-1024 flex flex-col justify-center ">
-          <Mdx code={post.body.code} />
-        </div>
+      <div className=" flex justify-center items-center flex-col">
+        <Mdx code={post.body.code} />
       </div>
     </article>
   );
