@@ -133,7 +133,7 @@ const components = {
     children,
     ...props
   }: React.HTMLAttributes<HTMLPreElement>) => (
-    <pre className={' w-full px-12 py-4 rounded-sm'} {...props}>
+    <pre className={' w-full px-32 py-16 rounded-sm'} {...props}>
       {children}
     </pre>
   ),
