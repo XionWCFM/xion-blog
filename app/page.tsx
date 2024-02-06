@@ -25,6 +25,9 @@ export default function Home() {
 
   return (
     <div className="">
+      <div className=" font-header-1 text-header-1 leading-header-1 ">
+        gdsfds
+      </div>
       <h1 className="">Next.js + Contentlayer Example</h1>
       {posts.map((post, idx) => (
         <PostCard key={idx} {...post} />

@@ -13,12 +13,14 @@ const PostLayout = ({ params }: { params: { slug: string[] } }) => {
   if (!post) notFound();
 
   return (
-    <article className="mx-auto max-w-xl py-8">
-      <div className="mb-8 text-center textcolor">
+    <article className="">
+      <div className="mb-8 ">
         <time dateTime={post.date} className="mb-1 text-xs text-gray-600">
           {format(parseISO(post.date), 'yyyy.MM.dd')}
         </time>
         <h1 className="text-3xl font-bold">{post.title}</h1>
+      </div>
+      <div className=" bg-primary-50 ">
         <Mdx code={post.body.code} />
       </div>
     </article>
