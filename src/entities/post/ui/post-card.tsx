@@ -2,7 +2,11 @@ import { Post } from 'contentlayer/generated';
 import { format, parseISO } from 'date-fns';
 import Link from 'next/link';
 
-export const PostCard = (post: Post) => {
+interface PostCardProps {
+  post: Post;
+}
+
+export const PostCard = ({ post }: PostCardProps) => {
   return (
     <div className="mb-8">
       <h2 className="mb-1 text-xl">
@@ -19,5 +23,3 @@ export const PostCard = (post: Post) => {
     </div>
   );
 };
-
-
