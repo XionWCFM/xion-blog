@@ -1,7 +1,7 @@
 import Link from 'next/link';
-import { compareDesc, format, parseISO } from 'date-fns';
+import { format, parseISO } from 'date-fns';
 import { allPosts, Post } from 'contentlayer/generated';
-import { getAllPost } from '@/src/features';
+import { getAllPost } from '@/src/entities/post';
 function PostCard(post: Post) {
   return (
     <div className="mb-8">
