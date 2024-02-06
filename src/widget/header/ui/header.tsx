@@ -3,10 +3,16 @@
 import Link from 'next/link';
 import { PATH } from '../../../shared/constant/path';
 import { DarkModeButton } from '../../../features/darkmode/ui/dark-mode-button';
+import { useScrollDirection } from '@/src/shared/hook/use-scroll-direction';
 
 export const Header = () => {
+  const scrollDirection = useScrollDirection();
+  const shouldHiding =
+    scrollDirection === 'down' ? '-translate-y-[64px]' : 'translate-y-0';
   return (
-    <div className=" w-screen z-10 fixed-top-left">
+    <header
+      className={`transition-all backdrop-blur-[1.5px] duration-300 w-screen z-10 fixed-top-left ${shouldHiding}`}
+    >
       <div className="w-full h-64 flex justify-between pr-24">
         <div className=" flex items-center justify-center px-12 gap-x-16 ">
           <div className=" text-center flex justify-center items-center text-primary-400 font-header-2 text-header-2 leading-header-2">
@@ -17,6 +23,6 @@ export const Header = () => {
         </div>
         <DarkModeButton />
       </div>
-    </div>
+    </header>
   );
 };

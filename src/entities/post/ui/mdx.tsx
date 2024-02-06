@@ -66,7 +66,7 @@ const components = {
   ),
   p: ({ className, ...props }: React.HTMLAttributes<HTMLParagraphElement>) => (
     <span
-      className={' text-foreground/80 text-body-4 leading-body-4'}
+      className={' text-foreground/80 text-body-3 leading-[200%]'}
       {...props}
     />
   ),
@@ -133,13 +133,16 @@ const components = {
     children,
     ...props
   }: React.HTMLAttributes<HTMLPreElement>) => (
-    <pre className={' flex px-12 py-4 rounded-sm'} {...props}>
+    <pre className={' w-full px-12 py-4 rounded-sm'} {...props}>
       {children}
     </pre>
   ),
   code: ({ className, ...props }: React.HTMLAttributes<HTMLElement>) => (
-    <code className={'text-caption-2'} {...props} />
+    <code className={' w-full text-caption-2'} {...props} />
   ),
+  figure: ({ ...prop }: React.ComponentPropsWithoutRef<'figure'>) => {
+    return <figure {...prop} className=" w-full"></figure>;
+  },
 };
 
 interface MdxProps {

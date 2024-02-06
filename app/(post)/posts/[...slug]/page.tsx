@@ -13,7 +13,7 @@ const PostLayout = ({ params }: { params: { slug: string[] } }) => {
   if (!post) notFound();
 
   return (
-    <article className=" w-1024 flex justify-center items-center flex-col">
+    <article className=" w-full md:w-[768px] flex justify-center items-center flex-col">
       <div className="mb-8 ">
         <time dateTime={post.date} className="mb-1 text-xs text-gray-600">
           {format(parseISO(post.date), 'yyyy.MM.dd')}
