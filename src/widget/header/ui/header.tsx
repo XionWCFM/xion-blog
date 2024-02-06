@@ -1,8 +1,8 @@
 'use client';
 
 import Link from 'next/link';
-import { PATH } from '../../constant/path';
-import { DarkModeButton } from '../darkmode/dark-mode-button';
+import { PATH } from '../../../shared/constant/path';
+import { DarkModeButton } from '../../../features/darkmode/ui/dark-mode-button';
 
 export const Header = () => {
   return (

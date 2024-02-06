@@ -3,7 +3,7 @@ import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 import rehypePrettyCode from 'rehype-pretty-code';
 import rehypeSlug from 'rehype-slug';
 import remarkGfm from 'remark-gfm';
-import { CATEGORIES } from './src/entities/categories';
+import { CATEGORIES } from './src/entities/categories/model/model';
 
 export const Post = defineDocumentType(() => ({
   name: 'Post',
