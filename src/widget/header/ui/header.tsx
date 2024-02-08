@@ -1,9 +1,9 @@
 'use client';
 
 import Link from 'next/link';
-import { PATH } from '../../../shared/constant/internal/route-path';
-import { DarkModeButton } from '../../../features/darkmode/ui/dark-mode-button';
 import { useScrollDirection } from '@/src/shared/hook/use-scroll-direction';
+import { PATH } from '@/src/shared/constant/internal/route-path';
+import { DarkModeButton } from '@/src/features/darkmode';
 
 export const Header = () => {
   const scrollDirection = useScrollDirection();
