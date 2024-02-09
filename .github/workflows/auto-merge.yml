@@ -1,0 +1,36 @@
+name: Auto Merge
+
+on:
+  pull_request:
+    branches:
+      - dev
+    types: [opened, synchronize, reopened]
+
+jobs:
+  auto-merge:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '20' 
+          cache: 'yarn'
+
+      - name: Install dependencies with Yarn Berry
+        run: yarn install
+
+      - name: Build project with Yarn Berry
+        run: yarn build 
+
+      - name: Auto merge
+        uses: pascalgn/automerge-action@v0.14.3
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          MERGE_LABELS: ""
+          MERGE_METHOD: merge
+          MERGE_COMMIT_MESSAGE: "action:merge"
+          MERGE_RETRIES: "6"
+          MERGE_RETRY_SLEEP: "10000"
