@@ -40,11 +40,10 @@ const RAW_RUNTIME_STATE =
           ["@xionhub/pubsub", "npm:0.1.0"],\
           ["@xionhub/react-hook", "virtual:c6dcce817fa225290e033ab3df9d032741dc228bb28c9cbb4719875ef6095c1c8f4a1ecb6d1cce6f1119ad7c9bb93c31bc307a4e235fab5627d039ca42e55b65#npm:1.0.0"],\
           ["@xionhub/tailwind-plugin", "virtual:c6dcce817fa225290e033ab3df9d032741dc228bb28c9cbb4719875ef6095c1c8f4a1ecb6d1cce6f1119ad7c9bb93c31bc307a4e235fab5627d039ca42e55b65#npm:0.1.0"],\
-          ["@xionhub/token", "npm:0.1.3"],\
+          ["@xionhub/token", "npm:0.1.4"],\
           ["@xionhub/util", "npm:0.1.0"],\
           ["autoprefixer", "virtual:c6dcce817fa225290e033ab3df9d032741dc228bb28c9cbb4719875ef6095c1c8f4a1ecb6d1cce6f1119ad7c9bb93c31bc307a4e235fab5627d039ca42e55b65#npm:10.4.17"],\
           ["class-variance-authority", "npm:0.7.0"],\
-          ["clsx", "npm:2.1.0"],\
           ["contentlayer", "npm:0.3.4"],\
           ["date-fns", "npm:3.3.1"],\
           ["eslint", "npm:8.56.0"],\
@@ -66,7 +65,6 @@ const RAW_RUNTIME_STATE =
           ["sharp", "npm:0.33.2"],\
           ["shiki", "npm:1.0.0-beta.5"],\
           ["shikiji", "npm:0.10.2"],\
-          ["tailwind-merge", "npm:2.2.1"],\
           ["tailwindcss", "npm:3.4.1"],\
           ["typescript", "patch:typescript@npm%3A5.3.3#optional!builtin<compat/typescript>::version=5.3.3&hash=e012d7"]\
         ],\
@@ -3531,10 +3529,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@xionhub/token", [\
-      ["npm:0.1.3", {\
-        "packageLocation": "../../.yarn/berry/cache/@xionhub-token-npm-0.1.3-18d3ec2933-10c0.zip/node_modules/@xionhub/token/",\
+      ["npm:0.1.4", {\
+        "packageLocation": "../../.yarn/berry/cache/@xionhub-token-npm-0.1.4-347b3480ba-10c0.zip/node_modules/@xionhub/token/",\
         "packageDependencies": [\
-          ["@xionhub/token", "npm:0.1.3"]\
+          ["@xionhub/token", "npm:0.1.4"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -3962,11 +3960,10 @@ const RAW_RUNTIME_STATE =
           ["@xionhub/pubsub", "npm:0.1.0"],\
           ["@xionhub/react-hook", "virtual:c6dcce817fa225290e033ab3df9d032741dc228bb28c9cbb4719875ef6095c1c8f4a1ecb6d1cce6f1119ad7c9bb93c31bc307a4e235fab5627d039ca42e55b65#npm:1.0.0"],\
           ["@xionhub/tailwind-plugin", "virtual:c6dcce817fa225290e033ab3df9d032741dc228bb28c9cbb4719875ef6095c1c8f4a1ecb6d1cce6f1119ad7c9bb93c31bc307a4e235fab5627d039ca42e55b65#npm:0.1.0"],\
-          ["@xionhub/token", "npm:0.1.3"],\
+          ["@xionhub/token", "npm:0.1.4"],\
           ["@xionhub/util", "npm:0.1.0"],\
           ["autoprefixer", "virtual:c6dcce817fa225290e033ab3df9d032741dc228bb28c9cbb4719875ef6095c1c8f4a1ecb6d1cce6f1119ad7c9bb93c31bc307a4e235fab5627d039ca42e55b65#npm:10.4.17"],\
           ["class-variance-authority", "npm:0.7.0"],\
-          ["clsx", "npm:2.1.0"],\
           ["contentlayer", "npm:0.3.4"],\
           ["date-fns", "npm:3.3.1"],\
           ["eslint", "npm:8.56.0"],\
@@ -3988,7 +3985,6 @@ const RAW_RUNTIME_STATE =
           ["sharp", "npm:0.33.2"],\
           ["shiki", "npm:1.0.0-beta.5"],\
           ["shikiji", "npm:0.10.2"],\
-          ["tailwind-merge", "npm:2.2.1"],\
           ["tailwindcss", "npm:3.4.1"],\
           ["typescript", "patch:typescript@npm%3A5.3.3#optional!builtin<compat/typescript>::version=5.3.3&hash=e012d7"]\
         ],\
@@ -4285,13 +4281,6 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "../../.yarn/berry/cache/clsx-npm-2.0.0-afafbbe44a-10c0.zip/node_modules/clsx/",\
         "packageDependencies": [\
           ["clsx", "npm:2.0.0"]\
-        ],\
-        "linkType": "HARD"\
-      }],\
-      ["npm:2.1.0", {\
-        "packageLocation": "../../.yarn/berry/cache/clsx-npm-2.1.0-29d286e1de-10c0.zip/node_modules/clsx/",\
-        "packageDependencies": [\
-          ["clsx", "npm:2.1.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -10243,16 +10232,6 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "../../.yarn/berry/cache/supports-preserve-symlinks-flag-npm-1.0.0-f17c4d0028-10c0.zip/node_modules/supports-preserve-symlinks-flag/",\
         "packageDependencies": [\
           ["supports-preserve-symlinks-flag", "npm:1.0.0"]\
-        ],\
-        "linkType": "HARD"\
-      }]\
-    ]],\
-    ["tailwind-merge", [\
-      ["npm:2.2.1", {\
-        "packageLocation": "../../.yarn/berry/cache/tailwind-merge-npm-2.2.1-8dc1f0b72b-10c0.zip/node_modules/tailwind-merge/",\
-        "packageDependencies": [\
-          ["tailwind-merge", "npm:2.2.1"],\
-          ["@babel/runtime", "npm:7.23.9"]\
         ],\
         "linkType": "HARD"\
       }]\

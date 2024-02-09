@@ -1,94 +1,90 @@
-import { cn } from '@/src/shared/common-ui/cn';
 import { useMDXComponent } from 'next-contentlayer/hooks';
 import Image from 'next/image';
 import * as React from 'react';
 
 const components = {
   h1: ({ className, ...props }: React.HTMLAttributes<HTMLHeadingElement>) => (
-    <h1 className={cn(' text', className)} {...props} />
+    <h1
+      className={
+        ' mb-16 text-header-1 font-header-1 leading-header-1 text-foreground/90 '
+      }
+      {...props}
+    />
   ),
   h2: ({ className, ...props }: React.HTMLAttributes<HTMLHeadingElement>) => (
     <h2
-      className={cn(
-        'mt-10 scroll-m-20 border-b pb-1 text-4xl font-semibold tracking-tight first:mt-0 text-yellow-500 py-3',
-        className,
-      )}
+      className={
+        ' mb-16 text-header-2 font-header-2 leading-header-2 text-foreground/90'
+      }
       {...props}
     />
   ),
   h3: ({ className, ...props }: React.HTMLAttributes<HTMLHeadingElement>) => (
     <h3
-      className={cn(
-        'mt-8 scroll-m-20 text-2xl font-semibold tracking-tight text-yellow-500 py-3',
-        className,
-      )}
+      className={
+        ' mb-16 text-header-3 font-header-3 leading-header-3 text-foreground/90'
+      }
       {...props}
     />
   ),
   h4: ({ className, ...props }: React.HTMLAttributes<HTMLHeadingElement>) => (
     <h4
-      className={cn(
-        'mt-8 scroll-m-20 text-xl font-semibold tracking-tight text-yellow-500 py-2',
-        className,
-      )}
+      className={
+        ' mb-16 text-header-3 font-header-3 leading-header-3 text-foreground/90'
+      }
       {...props}
     />
   ),
   h5: ({ className, ...props }: React.HTMLAttributes<HTMLHeadingElement>) => (
     <h5
-      className={cn(
-        'mt-8 scroll-m-20 text-lg font-semibold tracking-tight text-yellow-500 py-2',
-        className,
-      )}
+      className={
+        ' mb-16 text-header-3 font-header-3 leading-header-3 text-foreground/90'
+      }
       {...props}
     />
   ),
   h6: ({ className, ...props }: React.HTMLAttributes<HTMLHeadingElement>) => (
     <h6
-      className={cn(
-        'mt-8 scroll-m-20 text-base font-semibold tracking-tight text-yellow-500 py-2',
-        className,
-      )}
+      className={
+        ' mb-16 text-header-3 font-header-3 leading-header-3 text-foreground/90'
+      }
       {...props}
     />
   ),
+
   a: ({
     className,
     ...props
   }: React.AnchorHTMLAttributes<HTMLAnchorElement>) => (
     <a
       target={'_blank'}
-      className={cn(
-        'font-medium underline underline-offset-4 hover:text-yellow-500 transition-colors duration-300',
-        className,
-      )}
+      className={
+        'font-medium underline underline-offset-4 hover:text-yellow-500 transition-colors duration-300'
+      }
       {...props}
     />
   ),
   p: ({ className, ...props }: React.HTMLAttributes<HTMLParagraphElement>) => (
     <span
-      className={cn('leading-8 [&:not(:first-child)]:mt-2 block', className)}
+      className={' text-foreground/80 text-body-3 leading-[200%]'}
       {...props}
     />
   ),
   ul: ({ className, ...props }: React.HTMLAttributes<HTMLUListElement>) => (
-    <ul className={cn('my-6 ml-6 list-disc ', className)} {...props} />
+    <ul className={'my-6 ml-6 list-disc '} {...props} />
   ),
   ol: ({ className, ...props }: React.HTMLAttributes<HTMLOListElement>) => (
-    <ol className={cn('my-6 ml-6 list-decimal ', className)} {...props} />
+    <ol className={'my-6 ml-6 list-decimal '} {...props} />
   ),
   li: ({ className, ...props }: React.LiHTMLAttributes<HTMLLIElement>) => (
-    <li className={cn('mt-2 ', className)} {...props} />
+    <li className={'mt-2 '} {...props} />
   ),
   blockquote: ({
     className,
     ...props
   }: React.BlockquoteHTMLAttributes<HTMLQuoteElement>) => (
     <blockquote
-      className={cn(
-        'mt-6 border-l-2 pl-6 italic [&>*]:text-muted-foreground',
-        className,
-      )}
+      className={'mt-6 border-l-2 pl-6 italic [&>*]:text-muted-foreground'}
       {...props}
     />
   ),
@@ -99,40 +95,36 @@ const components = {
         alt={alt as string}
         width={800}
         height={800}
-        className={cn(
-          'rounded-md border hover:scale-110 transition-transform ease-in-out duration-500',
-          className,
-        )}
+        className={
+          'rounded-md border hover:scale-110 transition-transform ease-in-out duration-500'
+        }
       />
     </div>
   ),
-  hr: ({ ...props }) => <hr className="my-4 md:my-8" {...props} />,
+  hr: ({ ...props }) => (
+    <hr className="my-8 border-t border-foreground/10" {...props} />
+  ),
   table: ({ className, ...props }: React.HTMLAttributes<HTMLTableElement>) => (
     <div className="my-6 w-full overflow-y-auto">
-      <table className={cn('w-full', className)} {...props} />
+      <table className={'w-full'} {...props} />
     </div>
   ),
   tr: ({ className, ...props }: React.HTMLAttributes<HTMLTableRowElement>) => (
-    <tr
-      className={cn('m-0 border-t p-0 even:bg-muted', className)}
-      {...props}
-    />
+    <tr className={'m-0 border-t p-0 even:bg-muted'} {...props} />
   ),
   th: ({ className, ...props }: React.HTMLAttributes<HTMLTableCellElement>) => (
     <th
-      className={cn(
-        'border px-4 py-2 text-left font-bold [&[align=center]]:text-center [&[align=right]]:text-right',
-        className,
-      )}
+      className={
+        'border px-4 py-2 text-left font-bold [&[align=center]]:text-center [&[align=right]]:text-right'
+      }
       {...props}
     />
   ),
   td: ({ className, ...props }: React.HTMLAttributes<HTMLTableCellElement>) => (
     <td
-      className={cn(
-        'border px-4 py-2 text-left [&[align=center]]:text-center [&[align=right]]:text-right',
-        className,
-      )}
+      className={
+        'border px-4 py-2 text-left [&[align=center]]:text-center [&[align=right]]:text-right'
+      }
       {...props}
     />
   ),
@@ -141,13 +133,16 @@ const components = {
     children,
     ...props
   }: React.HTMLAttributes<HTMLPreElement>) => (
-    <pre className={cn(' flex px-12 py-4 rounded-sm', className)} {...props}>
+    <pre className={' w-full px-32 py-16 rounded-sm'} {...props}>
       {children}
     </pre>
   ),
   code: ({ className, ...props }: React.HTMLAttributes<HTMLElement>) => (
-    <code className={cn('text-caption-2', className)} {...props} />
+    <code className={' w-full text-caption-2'} {...props} />
   ),
+  figure: ({ ...prop }: React.ComponentPropsWithoutRef<'figure'>) => {
+    return <figure {...prop} className=" w-full"></figure>;
+  },
 };
 
 interface MdxProps {
