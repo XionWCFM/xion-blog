@@ -13,22 +13,24 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Set up Node.js
+      - name: Setup Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '20'
-      - name: Install dependencies
-        run: npm install
+          node-version: '20' 
+          cache: 'yarn'
 
-      - name: Build project
-        run: npm run build
+      - name: Install dependencies with Yarn Berry
+        run: yarn install
+
+      - name: Build project with Yarn Berry
+        run: yarn build 
 
       - name: Auto merge
         uses: pascalgn/automerge-action@v0.14.3
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           MERGE_LABELS: ""
-          MERGE_METHOD: merge 
-          MERGE_COMMIT_MESSAGE: "😉 successful merging by github action" 
-          MERGE_RETRIES: "2"
+          MERGE_METHOD: merge
+          MERGE_COMMIT_MESSAGE: "action:merge"
+          MERGE_RETRIES: "6"
           MERGE_RETRY_SLEEP: "10000"
