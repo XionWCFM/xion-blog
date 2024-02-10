@@ -7,7 +7,10 @@ import { GoogleTagManager, GoogleAnalytics } from '@next/third-parties/google';
 import { ENV } from '@/src/shared/config/env';
 import { Providers } from '@/src/app/provider/providers';
 export const metadata: Metadata = {
-  title: 'xion blog',
+  title: {
+    default: 'xionhub',
+    template: '%s - xionhub',
+  },
   description: 'xion blog',
 };
 
