@@ -7,8 +7,14 @@ import { GoogleTagManager, GoogleAnalytics } from '@next/third-parties/google';
 import { ENV } from '@/src/shared/config/env';
 import { Providers } from '@/src/app/provider/providers';
 export const metadata: Metadata = {
-  title: 'xion blog',
+  title: {
+    default: 'xionhub',
+    template: '%s - xionhub',
+  },
   description: 'xion blog',
+  verification: {
+    google: 'DRsMbGmtMLi04daO_7HJa3kCHtYnVaFl4dUXNzyGm1c',
+  },
 };
 
 export default function RootLayout({
