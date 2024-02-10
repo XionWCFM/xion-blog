@@ -12,14 +12,18 @@ export const Post = defineDocumentType(() => ({
   fields: {
     title: { type: 'string', required: true },
     date: { type: 'date', required: true },
+    writer: {
+      type: 'string',
+      required: true,
+    },
     description: { type: 'string', required: true },
     categories: {
       type: 'enum',
       options: CATEGORIES,
-      default: 'react',
       required: true,
     },
     published: { type: 'boolean', required: true, default: true },
+    releaseDate: { type: 'date', required: true },
   },
   computedFields: {
     url: {

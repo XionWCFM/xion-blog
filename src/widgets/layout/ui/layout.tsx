@@ -10,7 +10,7 @@ const Layout = ({ children }: indexProps) => {
       <div className=" w-full ">
         <Header />
         {/* 왼쪽 선 스타일 */}
-        <div className=" h-full w-8 fixed-left bg-primary-400 invisible md:visible"></div>
+        <div className=" h-full w-8 fixed-left bg-foreground/80 invisible md:visible"></div>
       </div>
       {/* 레이아웃들을 피하는 스타일 */}
       <div className=" h-64"></div>

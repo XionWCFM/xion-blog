@@ -3,4 +3,11 @@
 @tailwind utilities;
 @layer base {
   @import '@xionhub/token/style';
+
+  body {
+    -ms-overflow-style: none;
+  }
+  ::-webkit-scrollbar {
+    display: none;
+  }
 }
