@@ -6,8 +6,14 @@ interface PostTitleProps {
 
 export const PostTitle = ({ post }: PostTitleProps) => {
   return (
-    <h2 className=" text-header-1 font-header-1 leading-header-1">
-      {post.title}
-    </h2>
+    <div className=" flex flex-col">
+      <h2 className=" text-header-1 font-header-1 leading-header-1 whitespace-pre-wrap">
+        {post.title}
+      </h2>
+      <div className=" mt-16"></div>
+      <span className=" text-caption-1 font-caption-1 leading-caption-1 whitespace-pre-wrap">
+        {post.description}
+      </span>
+    </div>
   );
 };

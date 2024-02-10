@@ -6,10 +6,13 @@ interface PostTitleDescriptionProps {
 }
 export const PostTitleDescription = ({ post }: PostTitleDescriptionProps) => {
   return (
-    <div>
-      <time>{format(parseISO(post.date), 'yyyy.MM.dd')}</time>
-      <span>{post.categories}</span>
-      <span>{post.description}</span>
+    <div className=" flex justify-between items-center">
+      <time className=" text-caption-2 font-caption-2 leading-caption-2">
+        {format(parseISO(post.date), 'yyyy.MM.dd')}
+      </time>
+      <span className=" text-caption-2 font-caption-2 leading-caption-2">
+        {post.categories}
+      </span>
     </div>
   );
 };
