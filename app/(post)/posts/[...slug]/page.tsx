@@ -1,6 +1,6 @@
 import { allPosts } from 'contentlayer/generated';
 import { notFound } from 'next/navigation';
-import Mdx from '@/src/entities/post/ui/mdx';
+import Mdx from '@/src/features/mdx/ui/mdx';
 import { createStaticParam, getPost } from '@/src/entities/post/model/service';
 import { PostTitle } from '@/src/entities/post';
 import { Spacing } from '@/src/shared/common-ui/spacing';
@@ -19,7 +19,7 @@ const PostPage = ({ params }: { params: { slug: string[] } }) => {
     <ReactiveContainer>
       <PostTitle post={post} />
       <Spacing className=" mt-48" />
-      <div className=" flex justify-center items-center flex-col">
+      <div className=" flex flex-col">
         <Mdx code={post.body.code} />
       </div>
     </ReactiveContainer>

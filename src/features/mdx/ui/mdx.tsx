@@ -1,6 +1,7 @@
 import { useMDXComponent } from 'next-contentlayer/hooks';
 import Image from 'next/image';
 import * as React from 'react';
+import { Pre } from './pre';
 
 const components = {
   h1: ({ className, ...props }: React.HTMLAttributes<HTMLHeadingElement>) => (
@@ -128,20 +129,16 @@ const components = {
       {...props}
     />
   ),
-  pre: ({
-    className,
-    children,
-    ...props
-  }: React.HTMLAttributes<HTMLPreElement>) => (
-    <pre className={' w-full px-32 py-16 rounded-sm'} {...props}>
-      {children}
-    </pre>
-  ),
+  pre: Pre,
   code: ({ className, ...props }: React.HTMLAttributes<HTMLElement>) => (
     <code className={' w-full text-caption-2'} {...props} />
   ),
-  figure: ({ ...prop }: React.ComponentPropsWithoutRef<'figure'>) => {
-    return <figure {...prop} className=" w-full"></figure>;
+  figure: ({ children, ...prop }: React.ComponentPropsWithoutRef<'figure'>) => {
+    return (
+      <figure {...prop} className=" relative w-full">
+        {children}
+      </figure>
+    );
   },
 };
 
