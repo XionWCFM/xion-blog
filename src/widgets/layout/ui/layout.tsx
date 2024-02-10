@@ -6,7 +6,7 @@ interface indexProps extends React.PropsWithChildren {}
 
 const Layout = ({ children }: indexProps) => {
   return (
-    <div className="px-16 md:px-0 w-screen  border-l-0 md:border-l-[60px] border-t-[24px] border-foreground/90  dark:border-white">
+    <div className="px-16 md:px-0 w-screen">
       <div className=" px-0 md:px-32">
         <Header />
       </div>

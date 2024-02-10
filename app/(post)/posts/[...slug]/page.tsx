@@ -36,5 +36,5 @@ export const generateMetadata = ({
   const joinSlug = params.slug.join('/');
   const post = allPosts.find((post) => post._raw.flattenedPath === joinSlug);
   if (!post) throw new Error(`Post not found for slug: ${params.slug}`);
-  return { title: post.title, description: post.description };
+  return { title: post.title, description: post.body.code };
 };

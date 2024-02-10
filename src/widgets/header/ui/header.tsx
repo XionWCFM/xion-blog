@@ -14,7 +14,7 @@ export const Header = () => {
       className={`transition-all  duration-300 border-foreground w-full ${shouldHiding}`}
     >
       <div className="w-full h-64 flex justify-between">
-        <div className=" flex items-center justify-center gap-x-16">
+        <div className=" flex items-center justify-center gap-x-16 ">
           <div className=" text-center flex justify-center items-center text-foreground font-header-2 text-header-2 leading-header-2">
             <Link href={PATH.root}>xion</Link>
           </div>

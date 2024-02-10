@@ -24,7 +24,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko">
-      <body className={`${XION_NEXT_FONT.className}`}>
+      <body className={`${XION_NEXT_FONT.className} dark:bg-gray-950`}>
         <Providers>
           <Layout>{children}</Layout>
         </Providers>

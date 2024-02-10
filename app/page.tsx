@@ -7,9 +7,10 @@ export default function Home() {
 
   return (
     <main className="">
-      <form action="">
+      <form className=" max-w-[768px]">
         <Input className=" w-full" />
       </form>
+      
       {posts.map((post, idx) => (
         <PostCard key={idx} post={post} />
       ))}
