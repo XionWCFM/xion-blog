@@ -11,15 +11,13 @@ export const Header = () => {
     scrollDirection === 'down' ? '-translate-y-[64px]' : 'translate-y-0';
   return (
     <header
-      className={`transition-all  duration-300 w-screen z-10 fixed-top-left ${shouldHiding}`}
+      className={`transition-all  duration-300 border-foreground w-full ${shouldHiding}`}
     >
-      <div className="w-full h-64 flex justify-between pr-24">
-        <div className=" flex items-center justify-center px-12 gap-x-16 ">
-          <div className=" text-center flex justify-center items-center text-foreground/80 font-header-2 text-header-2 leading-header-2">
+      <div className="w-full h-64 flex justify-between">
+        <div className=" flex items-center justify-center gap-x-16">
+          <div className=" text-center flex justify-center items-center text-foreground font-header-2 text-header-2 leading-header-2">
             <Link href={PATH.root}>xion</Link>
           </div>
-
-          <div className=""></div>
         </div>
         <DarkModeButton />
       </div>

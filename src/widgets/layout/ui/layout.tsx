@@ -6,16 +6,15 @@ interface indexProps extends React.PropsWithChildren {}
 
 const Layout = ({ children }: indexProps) => {
   return (
-    <div className=" w-screen">
-      <div className=" w-full ">
+    <div className="px-16 md:px-0 w-screen  border-l-0 md:border-l-[60px] border-t-[24px] border-foreground/90  dark:border-white">
+      <div className=" px-0 md:px-16">
         <Header />
-        {/* 왼쪽 선 스타일 */}
-        <div className=" h-full w-8 fixed-left bg-foreground/80 invisible md:visible"></div>
       </div>
-      {/* 레이아웃들을 피하는 스타일 */}
       <div className=" h-64"></div>
-      <div className=" px-0 md:pl-8 flex">
-        <div className=" w-full min-h-[calc(100vh-64px-256px)]">{children}</div>
+      <div className=" px-0 md:pl-32 flex">
+        <div className=" w-full min-h-[calc(100vh-64px-256px-24px-64px)]">
+          {children}
+        </div>
       </div>
       <Footer />
     </div>
