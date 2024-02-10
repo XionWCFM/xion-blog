@@ -6,8 +6,10 @@ interface PostTitleDescriptionProps {
 }
 export const PostTitleDescription = ({ post }: PostTitleDescriptionProps) => {
   return (
-    <span>
+    <div>
       <time>{format(parseISO(post.date), 'yyyy.MM.dd')}</time>
-    </span>
+      <span>{post.categories}</span>
+      <span>{post.description}</span>
+    </div>
   );
 };
