@@ -22,7 +22,7 @@
     "@xionhub/pubsub": "^0.1.0",
     "@xionhub/react-hook": "^1.0.0",
     "@xionhub/tailwind-plugin": "^0.1.0",
-    "@xionhub/token": "^0.1.4",
+    "@xionhub/token": "^0.1.5",
     "@xionhub/util": "^0.1.0",
     "class-variance-authority": "^0.7.0",
     "contentlayer": "^0.3.4",

@@ -2412,10 +2412,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@xionhub/token@npm:^0.1.4":
-  version: 0.1.4
-  resolution: "@xionhub/token@npm:0.1.4"
-  checksum: 10c0/fcec1fdcb5070c3e543100ee454ab63f9c911c99b1e7451ae3b6b1f060cb3a51d61eb3eb58825a32d19798c97ce8471700a3a571b58d62039a69635d7b5e422d
+"@xionhub/token@npm:^0.1.5":
+  version: 0.1.5
+  resolution: "@xionhub/token@npm:0.1.5"
+  checksum: 10c0/2c366dd3e3592ab9edc404cd24ecb53900c5888a1d6619edb3d29575916adfa8f788f44db69370477ab44677607dfc803dbf491494a7a6938dcf51060a0e519b
   languageName: node
   linkType: hard
 
@@ -9044,7 +9044,7 @@ __metadata:
     "@xionhub/pubsub": "npm:^0.1.0"
     "@xionhub/react-hook": "npm:^1.0.0"
     "@xionhub/tailwind-plugin": "npm:^0.1.0"
-    "@xionhub/token": "npm:^0.1.4"
+    "@xionhub/token": "npm:^0.1.5"
     "@xionhub/util": "npm:^0.1.0"
     autoprefixer: "npm:^10.0.1"
     class-variance-authority: "npm:^0.7.0"
