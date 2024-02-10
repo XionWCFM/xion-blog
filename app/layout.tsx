@@ -1,4 +1,4 @@
-import './globals.css';
+import '@/src/app/style/globals.css';
 import Layout from '@/src/widgets/layout/ui/layout';
 import { Analytics } from '@vercel/analytics/react';
 import type { Metadata } from 'next';
