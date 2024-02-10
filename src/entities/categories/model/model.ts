@@ -4,6 +4,7 @@ export const CATEGORIES = [
   'javascript',
   'css',
   'typescript',
+  '회고',
 ] as const;
 
 export type Categories = (typeof CATEGORIES)[number];

@@ -19,7 +19,7 @@ const PostPage = ({ params }: { params: { slug: string[] } }) => {
     <ReactiveContainer>
       <PostTitle post={post} />
       <Spacing className=" mt-48" />
-      <div className=" flex flex-col">
+      <div className=" flex flex-col w-full">
         <Mdx code={post.body.code} />
       </div>
     </ReactiveContainer>
