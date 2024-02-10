@@ -2,7 +2,6 @@ import { defineDocumentType, makeSource } from 'contentlayer/source-files';
 import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 import rehypePrettyCode from 'rehype-pretty-code';
 import rehypeSlug from 'rehype-slug';
-import remarkGfm from 'remark-gfm';
 import { CATEGORIES } from './src/entities/categories/model/model';
 
 export const Post = defineDocumentType(() => ({
@@ -37,7 +36,7 @@ export default makeSource({
   contentDirPath: 'posts',
   documentTypes: [Post],
   mdx: {
-    remarkPlugins: [remarkGfm],
+    remarkPlugins: [],
     rehypePlugins: [
       rehypeSlug,
       [
