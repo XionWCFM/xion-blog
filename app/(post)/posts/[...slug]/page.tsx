@@ -3,6 +3,8 @@ import { notFound } from 'next/navigation';
 import Mdx from '@/src/entities/post/ui/mdx';
 import { createStaticParam, getPost } from '@/src/entities/post/model/service';
 import { PostTitle } from '@/src/entities/post';
+import { Spacing } from '@/src/shared/common-ui/spacing';
+import ReactiveContainer from '@/src/shared/common-ui/reactive-container';
 
 export const generateStaticParams = async () => {
   return createStaticParam(allPosts);
@@ -13,14 +15,13 @@ const PostPage = ({ params }: { params: { slug: string[] } }) => {
   if (!post) notFound();
 
   return (
-    <div className=" w-full flex justify-center items-center flex-col">
-      <article className=" w-full md:w-[768px] flex justify-center items-center flex-col">
-        <PostTitle post={post} />
-        <div className=" flex justify-center items-center flex-col">
-          <Mdx code={post.body.code} />
-        </div>
-      </article>
-    </div>
+    <ReactiveContainer>
+      <PostTitle post={post} />
+      <Spacing className=" mt-48" />
+      <div className=" flex justify-center items-center flex-col">
+        <Mdx code={post.body.code} />
+      </div>
+    </ReactiveContainer>
   );
 };
 
