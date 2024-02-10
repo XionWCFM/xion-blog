@@ -4,6 +4,7 @@ import { Post } from 'contentlayer/generated';
 import { ASSET } from '@/src/shared/constant/internal/asset';
 import { XionAvatar } from '@/src/shared/common-ui/avatar';
 import { dateConverter } from '@/src/shared/util/date-converter';
+import { Separator } from '@/src/shared/common-ui/separator';
 
 interface PostTitleProps {
   post: Post;
@@ -12,7 +13,7 @@ interface PostTitleProps {
 export const PostTitle = ({ post }: PostTitleProps) => {
   return (
     <div className=" flex flex-col w-full">
-      <div className=" border-t-[4px] border-foreground"></div>
+      <Separator className=" border-t-[4px] border-foreground" />
       <Spacing className=" mt-16" />
       <span className=" text-caption-1 font-caption-1 leading-caption-1 text-foreground/40">
         {post.categories}
@@ -22,18 +23,17 @@ export const PostTitle = ({ post }: PostTitleProps) => {
         {post.title}
       </h1>
       <Spacing className=" mt-24" />
-      <span className=" text-body-3 font-body-3 leading-body-3 text-foreground/60">
+      <span className=" text-body-4 font-body-4 leading-body-4 text-foreground/60">
         {post.description}
       </span>
       <Spacing className=" mt-12" />
       <div className=" text-foreground/50 flex items-center text-caption-2 font-caption-2 leading-caption-2">
         <XionAvatar src={ASSET.avatar.src} />
         <span className=" ml-4 mr-16">{post.writer}</span>
-        <div className=" mr-24 border-l border-foreground"></div>
         <span>{dateConverter(post.date)}</span>
       </div>
       <Spacing className=" mt-16" />
-      <div className=" border-t-[1px] border-foreground/30"></div>
+      <Separator className=" border-t-[1px] border-foreground/30" />
     </div>
   );
 };
