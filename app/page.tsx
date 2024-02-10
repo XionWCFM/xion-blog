@@ -1,37 +1,20 @@
-import Link from 'next/link';
-import { format, parseISO } from 'date-fns';
 import { allPosts, Post } from 'contentlayer/generated';
-import { getAllPost } from '@/src/entities/post';
-function PostCard(post: Post) {
-  return (
-    <div className="mb-8">
-      <h2 className="mb-1 text-xl">
-        <Link
-          href={post.url}
-          className="text-blue-700 hover:text-blue-900 dark:text-blue-400"
-        >
-          {post.title}
-        </Link>
-      </h2>
-      <time dateTime={post.date} className="mb-2 block text-xs text-gray-600">
-        {format(parseISO(post.date), 'yyyy.MM.dd')}
-      </time>
-    </div>
-  );
-}
+import { PostCard, getAllPost } from '@/src/entities/post';
+import { Input } from '@/src/shared/common-ui/input';
+import { Spacing } from '@/src/shared/common-ui/spacing';
 
 export default function Home() {
   const posts = getAllPost(allPosts);
 
   return (
-    <div className="">
-      <div className=" font-header-1 text-header-1 leading-header-1 ">
-        gdsfds
-      </div>
-      <h1 className="">Next.js + Contentlayer Example</h1>
+    <main className="">
+      <form className=" w-full">
+        <Input className=" w-full" />
+      </form>
+      <Spacing className=" mt-64" />
       {posts.map((post, idx) => (
-        <PostCard key={idx} {...post} />
+        <PostCard key={idx} post={post} />
       ))}
-    </div>
+    </main>
   );
 }

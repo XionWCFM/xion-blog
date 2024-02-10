@@ -2412,10 +2412,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@xionhub/token@npm:^0.1.4":
-  version: 0.1.4
-  resolution: "@xionhub/token@npm:0.1.4"
-  checksum: 10c0/fcec1fdcb5070c3e543100ee454ab63f9c911c99b1e7451ae3b6b1f060cb3a51d61eb3eb58825a32d19798c97ce8471700a3a571b58d62039a69635d7b5e422d
+"@xionhub/token@npm:^0.1.5":
+  version: 0.1.5
+  resolution: "@xionhub/token@npm:0.1.5"
+  checksum: 10c0/2c366dd3e3592ab9edc404cd24ecb53900c5888a1d6619edb3d29575916adfa8f788f44db69370477ab44677607dfc803dbf491494a7a6938dcf51060a0e519b
   languageName: node
   linkType: hard
 
@@ -5219,6 +5219,21 @@ __metadata:
   bin:
     jiti: bin/jiti.js
   checksum: 10c0/7f361219fe6c7a5e440d5f1dba4ab763a5538d2df8708cdc22561cf25ea3e44b837687931fca7cdd8cdd9f567300e90be989dd1321650045012d8f9ed6aab07f
+  languageName: node
+  linkType: hard
+
+"jotai@npm:^2.6.4":
+  version: 2.6.4
+  resolution: "jotai@npm:2.6.4"
+  peerDependencies:
+    "@types/react": ">=17.0.0"
+    react: ">=17.0.0"
+  peerDependenciesMeta:
+    "@types/react":
+      optional: true
+    react:
+      optional: true
+  checksum: 10c0/2cda03cccff7f6509d5733412194543634dc496a01a88da4e81d6bf1c46c27383833e8bd9462ecbcd4b745316b54edf5aa403b42c098900561cc08a0f5fcaa54
   languageName: node
   linkType: hard
 
@@ -9044,7 +9059,7 @@ __metadata:
     "@xionhub/pubsub": "npm:^0.1.0"
     "@xionhub/react-hook": "npm:^1.0.0"
     "@xionhub/tailwind-plugin": "npm:^0.1.0"
-    "@xionhub/token": "npm:^0.1.4"
+    "@xionhub/token": "npm:^0.1.5"
     "@xionhub/util": "npm:^0.1.0"
     autoprefixer: "npm:^10.0.1"
     class-variance-authority: "npm:^0.7.0"
@@ -9055,6 +9070,7 @@ __metadata:
     firebase: "npm:^10.8.0"
     framer-motion: "npm:^11.0.3"
     husky: "npm:^8.0.0"
+    jotai: "npm:^2.6.4"
     markdown-wasm: "npm:^1.2.0"
     next: "npm:^14.1.0"
     next-contentlayer: "npm:^0.3.4"

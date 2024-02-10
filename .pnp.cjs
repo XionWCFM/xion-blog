@@ -41,7 +41,7 @@ const RAW_RUNTIME_STATE =
           ["@xionhub/pubsub", "npm:0.1.0"],\
           ["@xionhub/react-hook", "virtual:a42916aa7819a4f00cc7c9847657bc85ba9c87fb95677bfbf399c703d282b509ad3be503919d7579df0ccf7505768c37e7518f9a36d78bd9a7bcf8ac987a17fa#npm:1.0.0"],\
           ["@xionhub/tailwind-plugin", "virtual:a42916aa7819a4f00cc7c9847657bc85ba9c87fb95677bfbf399c703d282b509ad3be503919d7579df0ccf7505768c37e7518f9a36d78bd9a7bcf8ac987a17fa#npm:0.1.0"],\
-          ["@xionhub/token", "npm:0.1.4"],\
+          ["@xionhub/token", "npm:0.1.5"],\
           ["@xionhub/util", "npm:0.1.0"],\
           ["autoprefixer", "virtual:a42916aa7819a4f00cc7c9847657bc85ba9c87fb95677bfbf399c703d282b509ad3be503919d7579df0ccf7505768c37e7518f9a36d78bd9a7bcf8ac987a17fa#npm:10.4.17"],\
           ["class-variance-authority", "npm:0.7.0"],\
@@ -52,6 +52,7 @@ const RAW_RUNTIME_STATE =
           ["firebase", "npm:10.8.0"],\
           ["framer-motion", "virtual:a42916aa7819a4f00cc7c9847657bc85ba9c87fb95677bfbf399c703d282b509ad3be503919d7579df0ccf7505768c37e7518f9a36d78bd9a7bcf8ac987a17fa#npm:11.0.3"],\
           ["husky", "npm:8.0.3"],\
+          ["jotai", "virtual:a42916aa7819a4f00cc7c9847657bc85ba9c87fb95677bfbf399c703d282b509ad3be503919d7579df0ccf7505768c37e7518f9a36d78bd9a7bcf8ac987a17fa#npm:2.6.4"],\
           ["markdown-wasm", "npm:1.2.0"],\
           ["next", "virtual:a42916aa7819a4f00cc7c9847657bc85ba9c87fb95677bfbf399c703d282b509ad3be503919d7579df0ccf7505768c37e7518f9a36d78bd9a7bcf8ac987a17fa#npm:14.1.0"],\
           ["next-contentlayer", "virtual:a42916aa7819a4f00cc7c9847657bc85ba9c87fb95677bfbf399c703d282b509ad3be503919d7579df0ccf7505768c37e7518f9a36d78bd9a7bcf8ac987a17fa#npm:0.3.4"],\
@@ -3705,10 +3706,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@xionhub/token", [\
-      ["npm:0.1.4", {\
-        "packageLocation": "../../.yarn/berry/cache/@xionhub-token-npm-0.1.4-347b3480ba-10c0.zip/node_modules/@xionhub/token/",\
+      ["npm:0.1.5", {\
+        "packageLocation": "../../.yarn/berry/cache/@xionhub-token-npm-0.1.5-fb4fd2a058-10c0.zip/node_modules/@xionhub/token/",\
         "packageDependencies": [\
-          ["@xionhub/token", "npm:0.1.4"]\
+          ["@xionhub/token", "npm:0.1.5"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -6977,6 +6978,28 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "../../.yarn/berry/cache/jiti-npm-1.21.0-baebd5985a-10c0.zip/node_modules/jiti/",\
         "packageDependencies": [\
           ["jiti", "npm:1.21.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["jotai", [\
+      ["npm:2.6.4", {\
+        "packageLocation": "../../.yarn/berry/cache/jotai-npm-2.6.4-9f4bf61444-10c0.zip/node_modules/jotai/",\
+        "packageDependencies": [\
+          ["jotai", "npm:2.6.4"]\
+        ],\
+        "linkType": "SOFT"\
+      }],\
+      ["virtual:a42916aa7819a4f00cc7c9847657bc85ba9c87fb95677bfbf399c703d282b509ad3be503919d7579df0ccf7505768c37e7518f9a36d78bd9a7bcf8ac987a17fa#npm:2.6.4", {\
+        "packageLocation": "./.yarn/__virtual__/jotai-virtual-798071dafc/3/.yarn/berry/cache/jotai-npm-2.6.4-9f4bf61444-10c0.zip/node_modules/jotai/",\
+        "packageDependencies": [\
+          ["jotai", "virtual:a42916aa7819a4f00cc7c9847657bc85ba9c87fb95677bfbf399c703d282b509ad3be503919d7579df0ccf7505768c37e7518f9a36d78bd9a7bcf8ac987a17fa#npm:2.6.4"],\
+          ["@types/react", "npm:18.2.52"],\
+          ["react", "npm:18.2.0"]\
+        ],\
+        "packagePeers": [\
+          "@types/react",\
+          "react"\
         ],\
         "linkType": "HARD"\
       }]\
@@ -11192,7 +11215,7 @@ const RAW_RUNTIME_STATE =
           ["@xionhub/pubsub", "npm:0.1.0"],\
           ["@xionhub/react-hook", "virtual:a42916aa7819a4f00cc7c9847657bc85ba9c87fb95677bfbf399c703d282b509ad3be503919d7579df0ccf7505768c37e7518f9a36d78bd9a7bcf8ac987a17fa#npm:1.0.0"],\
           ["@xionhub/tailwind-plugin", "virtual:a42916aa7819a4f00cc7c9847657bc85ba9c87fb95677bfbf399c703d282b509ad3be503919d7579df0ccf7505768c37e7518f9a36d78bd9a7bcf8ac987a17fa#npm:0.1.0"],\
-          ["@xionhub/token", "npm:0.1.4"],\
+          ["@xionhub/token", "npm:0.1.5"],\
           ["@xionhub/util", "npm:0.1.0"],\
           ["autoprefixer", "virtual:a42916aa7819a4f00cc7c9847657bc85ba9c87fb95677bfbf399c703d282b509ad3be503919d7579df0ccf7505768c37e7518f9a36d78bd9a7bcf8ac987a17fa#npm:10.4.17"],\
           ["class-variance-authority", "npm:0.7.0"],\
@@ -11203,6 +11226,7 @@ const RAW_RUNTIME_STATE =
           ["firebase", "npm:10.8.0"],\
           ["framer-motion", "virtual:a42916aa7819a4f00cc7c9847657bc85ba9c87fb95677bfbf399c703d282b509ad3be503919d7579df0ccf7505768c37e7518f9a36d78bd9a7bcf8ac987a17fa#npm:11.0.3"],\
           ["husky", "npm:8.0.3"],\
+          ["jotai", "virtual:a42916aa7819a4f00cc7c9847657bc85ba9c87fb95677bfbf399c703d282b509ad3be503919d7579df0ccf7505768c37e7518f9a36d78bd9a7bcf8ac987a17fa#npm:2.6.4"],\
           ["markdown-wasm", "npm:1.2.0"],\
           ["next", "virtual:a42916aa7819a4f00cc7c9847657bc85ba9c87fb95677bfbf399c703d282b509ad3be503919d7579df0ccf7505768c37e7518f9a36d78bd9a7bcf8ac987a17fa#npm:14.1.0"],\
           ["next-contentlayer", "virtual:a42916aa7819a4f00cc7c9847657bc85ba9c87fb95677bfbf399c703d282b509ad3be503919d7579df0ccf7505768c37e7518f9a36d78bd9a7bcf8ac987a17fa#npm:0.3.4"],\
