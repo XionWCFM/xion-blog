@@ -52,6 +52,7 @@ const RAW_RUNTIME_STATE =
           ["firebase", "npm:10.8.0"],\
           ["framer-motion", "virtual:a42916aa7819a4f00cc7c9847657bc85ba9c87fb95677bfbf399c703d282b509ad3be503919d7579df0ccf7505768c37e7518f9a36d78bd9a7bcf8ac987a17fa#npm:11.0.3"],\
           ["husky", "npm:8.0.3"],\
+          ["jotai", "virtual:a42916aa7819a4f00cc7c9847657bc85ba9c87fb95677bfbf399c703d282b509ad3be503919d7579df0ccf7505768c37e7518f9a36d78bd9a7bcf8ac987a17fa#npm:2.6.4"],\
           ["markdown-wasm", "npm:1.2.0"],\
           ["next", "virtual:a42916aa7819a4f00cc7c9847657bc85ba9c87fb95677bfbf399c703d282b509ad3be503919d7579df0ccf7505768c37e7518f9a36d78bd9a7bcf8ac987a17fa#npm:14.1.0"],\
           ["next-contentlayer", "virtual:a42916aa7819a4f00cc7c9847657bc85ba9c87fb95677bfbf399c703d282b509ad3be503919d7579df0ccf7505768c37e7518f9a36d78bd9a7bcf8ac987a17fa#npm:0.3.4"],\
@@ -6981,6 +6982,28 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["jotai", [\
+      ["npm:2.6.4", {\
+        "packageLocation": "../../.yarn/berry/cache/jotai-npm-2.6.4-9f4bf61444-10c0.zip/node_modules/jotai/",\
+        "packageDependencies": [\
+          ["jotai", "npm:2.6.4"]\
+        ],\
+        "linkType": "SOFT"\
+      }],\
+      ["virtual:a42916aa7819a4f00cc7c9847657bc85ba9c87fb95677bfbf399c703d282b509ad3be503919d7579df0ccf7505768c37e7518f9a36d78bd9a7bcf8ac987a17fa#npm:2.6.4", {\
+        "packageLocation": "./.yarn/__virtual__/jotai-virtual-798071dafc/3/.yarn/berry/cache/jotai-npm-2.6.4-9f4bf61444-10c0.zip/node_modules/jotai/",\
+        "packageDependencies": [\
+          ["jotai", "virtual:a42916aa7819a4f00cc7c9847657bc85ba9c87fb95677bfbf399c703d282b509ad3be503919d7579df0ccf7505768c37e7518f9a36d78bd9a7bcf8ac987a17fa#npm:2.6.4"],\
+          ["@types/react", "npm:18.2.52"],\
+          ["react", "npm:18.2.0"]\
+        ],\
+        "packagePeers": [\
+          "@types/react",\
+          "react"\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["js-tokens", [\
       ["npm:4.0.0", {\
         "packageLocation": "../../.yarn/berry/cache/js-tokens-npm-4.0.0-0ac852e9e2-10c0.zip/node_modules/js-tokens/",\
@@ -11203,6 +11226,7 @@ const RAW_RUNTIME_STATE =
           ["firebase", "npm:10.8.0"],\
           ["framer-motion", "virtual:a42916aa7819a4f00cc7c9847657bc85ba9c87fb95677bfbf399c703d282b509ad3be503919d7579df0ccf7505768c37e7518f9a36d78bd9a7bcf8ac987a17fa#npm:11.0.3"],\
           ["husky", "npm:8.0.3"],\
+          ["jotai", "virtual:a42916aa7819a4f00cc7c9847657bc85ba9c87fb95677bfbf399c703d282b509ad3be503919d7579df0ccf7505768c37e7518f9a36d78bd9a7bcf8ac987a17fa#npm:2.6.4"],\
           ["markdown-wasm", "npm:1.2.0"],\
           ["next", "virtual:a42916aa7819a4f00cc7c9847657bc85ba9c87fb95677bfbf399c703d282b509ad3be503919d7579df0ccf7505768c37e7518f9a36d78bd9a7bcf8ac987a17fa#npm:14.1.0"],\
           ["next-contentlayer", "virtual:a42916aa7819a4f00cc7c9847657bc85ba9c87fb95677bfbf399c703d282b509ad3be503919d7579df0ccf7505768c37e7518f9a36d78bd9a7bcf8ac987a17fa#npm:0.3.4"],\
