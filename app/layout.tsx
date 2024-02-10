@@ -12,6 +12,9 @@ export const metadata: Metadata = {
     template: '%s - xionhub',
   },
   description: 'xion blog',
+  verification: {
+    google: 'DRsMbGmtMLi04daO_7HJa3kCHtYnVaFl4dUXNzyGm1c',
+  },
 };
 
 export default function RootLayout({
