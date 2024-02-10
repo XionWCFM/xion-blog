@@ -1,8 +1,11 @@
-import { format, parseISO } from 'date-fns';
 import { allPosts } from 'contentlayer/generated';
 import { notFound } from 'next/navigation';
 import Mdx from '@/src/entities/post/ui/mdx';
 import { createStaticParam, getPost } from '@/src/entities/post/model/service';
+import { PostTitle } from '@/src/entities/post';
+import { Spacing } from '@/src/shared/common-ui/spacing';
+import ReactiveContainer from '@/src/shared/common-ui/reactive-container';
+import { Metadata } from 'next';
 
 export const generateStaticParams = async () => {
   return createStaticParam(allPosts);
@@ -13,19 +16,13 @@ const PostPage = ({ params }: { params: { slug: string[] } }) => {
   if (!post) notFound();
 
   return (
-    <div className=" w-full flex flex-col justify-center items-center">
-      <article className=" w-full md:w-[768px] flex justify-center items-center flex-col">
-        <div className="mb-8 ">
-          <time dateTime={post.date} className="mb-1 text-xs text-gray-600">
-            {format(parseISO(post.date), 'yyyy.MM.dd')}
-          </time>
-          <h1 className="text-3xl font-bold">{post.title}</h1>
-        </div>
-        <div className=" flex justify-center items-center flex-col">
-          <Mdx code={post.body.code} />
-        </div>
-      </article>
-    </div>
+    <ReactiveContainer>
+      <PostTitle post={post} />
+      <Spacing className=" mt-48" />
+      <div className=" flex justify-center items-center flex-col">
+        <Mdx code={post.body.code} />
+      </div>
+    </ReactiveContainer>
   );
 };
 
@@ -35,9 +32,9 @@ export const generateMetadata = ({
   params,
 }: {
   params: { slug: string[] };
-}) => {
+}): Metadata => {
   const joinSlug = params.slug.join('/');
   const post = allPosts.find((post) => post._raw.flattenedPath === joinSlug);
   if (!post) throw new Error(`Post not found for slug: ${params.slug}`);
-  return { title: post.title };
+  return { title: post.title, description: post.description };
 };

@@ -1,5 +1,5 @@
-import './globals.css';
-import Layout from '@/src/widget/layout/ui/layout';
+import '@/src/app/style/globals.css';
+import Layout from '@/src/widgets/layout/ui/layout';
 import { Analytics } from '@vercel/analytics/react';
 import type { Metadata } from 'next';
 import { XION_NEXT_FONT } from '@/src/app/style/font';
@@ -7,8 +7,14 @@ import { GoogleTagManager, GoogleAnalytics } from '@next/third-parties/google';
 import { ENV } from '@/src/shared/config/env';
 import { Providers } from '@/src/app/provider/providers';
 export const metadata: Metadata = {
-  title: 'xion blog',
+  title: {
+    default: 'xionhub',
+    template: '%s - xionhub',
+  },
   description: 'xion blog',
+  verification: {
+    google: 'DRsMbGmtMLi04daO_7HJa3kCHtYnVaFl4dUXNzyGm1c',
+  },
 };
 
 export default function RootLayout({
