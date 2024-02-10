@@ -1,10 +1,9 @@
 'use client';
 import { Spacing } from '@/src/shared/common-ui/spacing';
 import { Post } from 'contentlayer/generated';
-import { format, parseISO } from 'date-fns';
-import * as Avatar from '@radix-ui/react-avatar';
 import { ASSET } from '@/src/shared/constant/internal/asset';
 import { XionAvatar } from '@/src/shared/common-ui/avatar';
+import { dateConverter } from '@/src/shared/util/date-converter';
 
 interface PostTitleProps {
   post: Post;
@@ -31,7 +30,7 @@ export const PostTitle = ({ post }: PostTitleProps) => {
         <XionAvatar src={ASSET.avatar.src} />
         <span className=" ml-4 mr-16">{post.writer}</span>
         <div className=" mr-24 border-l border-foreground"></div>
-        <span>{format(parseISO(post.date), 'yyyy.MM.dd')}</span>
+        <span>{dateConverter(post.date)}</span>
       </div>
       <Spacing className=" mt-16" />
       <div className=" border-t-[1px] border-foreground/30"></div>
