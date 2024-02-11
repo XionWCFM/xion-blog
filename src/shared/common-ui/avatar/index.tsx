@@ -1,3 +1,4 @@
+'use client';
 import * as Avatar from '@radix-ui/react-avatar';
 import { VariantProps, cva } from 'class-variance-authority';
 
