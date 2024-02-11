@@ -1,4 +1,3 @@
-'use client';
 import { Spacing } from '@/src/shared/common-ui/spacing';
 import { Post } from 'contentlayer/generated';
 import { ASSET } from '@/src/shared/constant/internal/asset';
