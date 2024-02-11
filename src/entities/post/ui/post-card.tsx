@@ -8,7 +8,7 @@ interface PostCardProps {
 
 export const PostCard = ({ post }: PostCardProps) => {
   return (
-    <div className="mb-8">
+    <article className=" border-t border-foreground/20 py-48">
       <h2 className="mb-1 text-xl">
         <Link
           href={post.url}
@@ -20,6 +20,6 @@ export const PostCard = ({ post }: PostCardProps) => {
       <time dateTime={post.date} className="mb-2 block text-xs text-gray-600">
         {format(parseISO(post.date), 'yyyy.MM.dd')}
       </time>
-    </div>
+    </article>
   );
 };
