@@ -6,6 +6,7 @@ import { XION_NEXT_FONT } from '@/src/app/style/font';
 import { GoogleTagManager, GoogleAnalytics } from '@next/third-parties/google';
 import { ENV } from '@/src/shared/config/env';
 import { Providers } from '@/src/app/provider/providers';
+import { SideBar } from '@/src/widgets/sidebar';
 export const metadata: Metadata = {
   title: {
     default: 'xionhub',
@@ -27,6 +28,7 @@ export default function RootLayout({
       <body className={`${XION_NEXT_FONT.className} `}>
         <Providers>
           <Layout>{children}</Layout>
+          <SideBar />
         </Providers>
         <Analytics />
         <GoogleTagManager gtmId={ENV.gtmId} />
