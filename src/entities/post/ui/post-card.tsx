@@ -1,5 +1,7 @@
+import { XionAvatar } from '@/src/shared/common-ui/avatar';
 import { Chip } from '@/src/shared/common-ui/chip';
 import { Spacing } from '@/src/shared/common-ui/spacing';
+import { ASSET } from '@/src/shared/constant/internal/asset';
 import { dateConverter } from '@/src/shared/util/date-converter';
 import { Post } from 'contentlayer/generated';
 import Link from 'next/link';
@@ -32,6 +34,15 @@ export const PostCard = ({ post }: PostCardProps) => {
       <span className=" text-caption-1 font-caption-1 leading-caption-1 text-foreground/50">
         {post.description}
       </span>
+
+      <Spacing className=" mt-16" />
+
+      <div className=" flex gap-x-4 items-center">
+        <XionAvatar src={ASSET.avatar.src} size={'16'} />
+        <span className=" text-foreground/50 text-caption-2 font-caption-2 leading-caption-2">
+          {post.writer}
+        </span>
+      </div>
     </article>
   );
 };
