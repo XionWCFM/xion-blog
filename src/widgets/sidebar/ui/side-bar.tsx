@@ -1,3 +1,12 @@
+'use client';
+
+import { useSideBar } from '@/src/shared/store/side-bar-store';
+
 export const SideBar = () => {
-  return <nav className=" flex flex-col"></nav>;
+  const { isSideBarOpen } = useSideBar();
+  return isSideBarOpen ? (
+    <nav className=" flex flex-col fixed-top-right bg-primary-400 ">
+      hello world
+    </nav>
+  ) : null;
 };
