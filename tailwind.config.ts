@@ -1,19 +1,19 @@
-import type { Config } from 'tailwindcss';
-import xionPlugin from '@xionhub/tailwind-plugin';
-import { XION_STYLE } from '@xionhub/token';
+import type { Config } from "tailwindcss";
+
+import typography from "@tailwindcss/typography";
+import xionPlugin from "@xionhub/tailwind-plugin";
+import { XION_STYLE } from "@xionhub/token";
+
 const config: Config = {
-  content: [
-    './pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './components/**/*.{js,ts,jsx,tsx,mdx}',
-    './app/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/**/*.{js,ts,jsx,tsx,mdx}',
-  ],
+  content: ["./app/**/*.{js,ts,jsx,tsx,mdx}", "./src/**/*.{js,ts,jsx,tsx,mdx}"],
   theme: {
     ...XION_STYLE,
-    colors: XION_STYLE.colors,
-    extend: {},
+    extend: {}
   },
-  plugins: [xionPlugin],
-  darkMode: ['class'],
+  plugins: [xionPlugin, typography],
+  variants: {
+    typography: ["dark"]
+  },
+  darkMode: ["class"]
 };
 export default config;

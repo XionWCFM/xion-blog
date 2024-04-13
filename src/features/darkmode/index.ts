@@ -1,3 +1,2 @@
-import { DarkModeButton } from './ui/dark-mode-button';
-import { DarkModeProvider } from './model/dark-mode-provider';
-export { DarkModeButton, DarkModeProvider };
+export * from "./model/dark-mode-provider";
+export * from "./ui/dark-mode-button";

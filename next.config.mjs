@@ -1,34 +1,44 @@
-import { withSentryConfig } from '@sentry/nextjs';
-import { withContentlayer } from 'next-contentlayer';
+import remarkGfm from "remark-gfm";
 
-const nextConfig = {
-  reactStrictMode: true,
-  swcMinify: false,
-  webpack: (config) => {
-    config.cache = false;
-    return config;
-  },
+import createMdx from "@next/mdx";
+import { withSentryConfig } from "@sentry/nextjs";
+
+/** @type {import('next').NextConfig} */
+const baseNextConfig = {
+  reactStrictMode: true
 };
 
-export default withSentryConfig(
-  withContentlayer(nextConfig),
-  {
-    silent: true,
-    org: 'devxion',
-    project: 'xionblog',
-  },
-  {
-    widenClientFileUpload: true,
+const withMdx = createMdx({
+  pageExtensions: ["js", "jsx", "ts", "tsx", "md", "mdx"],
+  options: {
+    remarkPlugins: [remarkGfm],
+    rehypePlugins: []
+  }
+});
 
-    transpileClientSDK: true,
+const sentryWebpackPluginOptions = {
+  silent: true,
+  org: "devxion",
+  project: "xionblog",
+  authToken: process.env.SENTRY_AUTH_TOKEN
+};
 
-    tunnelRoute: '/monitoring',
+const sentryOptions = {
+  widenClientFileUpload: true,
+  transpileClientSDK: true,
+  tunnelRoute: "/monitoring",
+  hideSourceMaps: true,
+  disableLogger: true,
+  automaticVercelMonitors: true,
+  authToken: process.env.SENTRY_AUTH_TOKEN
+};
 
-    hideSourceMaps: true,
-
-    disableLogger: true,
-
-    automaticVercelMonitors: true,
-    authToken: process.env.SENTRY_AUTH_TOKEN,
-  },
+const nextConfigWithSentry = withSentryConfig(
+  baseNextConfig,
+  sentryWebpackPluginOptions,
+  sentryOptions
 );
+
+const nextConfig = withMdx(nextConfigWithSentry);
+
+export default nextConfig;
