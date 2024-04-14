@@ -7,7 +7,7 @@ module.exports = {
       }
     },
     upload: {
-      startServerCommand: "yarn dev",
+      startServerCommand: "yarn start",
       target: "temporary-public-storage"
     },
     assert: {
