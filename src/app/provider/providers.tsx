@@ -1,6 +1,8 @@
-'use client';
-import { DarkModeProvider } from '@/src/features/darkmode';
-import React from 'react';
+"use client";
+
+import React from "react";
+
+import { DarkModeProvider } from "~/features/darkmode";
 
 export const Providers = ({ children }: React.PropsWithChildren) => {
   return <DarkModeProvider>{children}</DarkModeProvider>;

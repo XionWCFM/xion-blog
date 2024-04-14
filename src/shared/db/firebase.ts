@@ -1,18 +1,24 @@
-import { initializeApp } from 'firebase/app';
-import { getAnalytics } from 'firebase/analytics';
-import { getFirestore } from 'firebase/firestore';
+import { getAnalytics } from "firebase/analytics";
+import { initializeApp } from "firebase/app";
+import { getFirestore } from "firebase/firestore";
+
+import { ENV } from "../constant";
+
 const firebaseConfig = {
-  apiKey: 'AIzaSyCNB5PKG2B-pERd6iX4GftHUrX-bR5TTFo',
-  authDomain: 'xionhub-5c453.firebaseapp.com',
-  projectId: 'xionhub-5c453',
-  storageBucket: 'xionhub-5c453.appspot.com',
-  messagingSenderId: '471819605008',
-  appId: '1:471819605008:web:ba08c1dbe897f8a7812695',
-  measurementId: 'G-X40B6L7TDD',
+  apiKey: ENV.firebaseApiKey,
+  authDomain: ENV.firebaseAuthDomain,
+  projectId: ENV.firebaseProjectId,
+  storageBucket: ENV.firebaseStorageBucket,
+  messagingSenderId: ENV.firebaseMessagingSenderId,
+  appId: ENV.firebaseAppId,
+  measurementId: ENV.firebaseMeasurementId
 };
 
 const app = initializeApp(firebaseConfig);
 const firestore = getFirestore(app);
-const analytics = getAnalytics(app);
+
+if (typeof window !== "undefined") {
+  getAnalytics(app);
+}
 
 export { app, firestore };

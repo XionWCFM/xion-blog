@@ -1,0 +1,28 @@
+name: Lighthouse CI
+on:
+  pull_request:
+    branches: [main]
+
+jobs:
+  lchi:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version-file: ".nvmrc"
+          cache: yarn
+
+      - name: Install Dependencies
+        run: yarn install --immutable
+
+      - name: build
+        run: yarn build
+
+      - name: Run Lighthouse
+        run: yarn lighthouse
+        env:
+          LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}

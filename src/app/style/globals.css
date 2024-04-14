@@ -2,18 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 @layer base {
-  @import '@xionhub/token/style';
+  @import "@xionhub/token/style";
 
   body {
     -ms-overflow-style: none;
   }
   ::-webkit-scrollbar {
     display: none;
-  }
-}
-
-@layer components {
-  span > code {
-    @apply bg-gray-100 rounded-sm text-primary-400 text-body-4 font-body-4 leading-body-4 p-4;
   }
 }
