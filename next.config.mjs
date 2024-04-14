@@ -5,7 +5,10 @@ import { withSentryConfig } from "@sentry/nextjs";
 
 /** @type {import('next').NextConfig} */
 const baseNextConfig = {
-  reactStrictMode: true
+  reactStrictMode: true,
+  compiler: {
+    removeConsole: process.env.NODE_ENV !== "development"
+  }
 };
 
 const withMdx = createMdx({
