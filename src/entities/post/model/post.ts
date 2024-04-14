@@ -1,7 +1,8 @@
 import fs from "fs";
+import { compileMDX } from "next-mdx-remote/rsc";
 import path from "path";
 
-import { Post } from "./post.type";
+import { Frontmatter, Post } from "./post.type";
 
 const postsDirectory = path.join(process.cwd(), "posts");
 
@@ -22,6 +23,14 @@ const readDirectory = (directory: string): Post[] => {
     }
     return posts;
   }, []);
+};
+
+export const getFrontmatter = async (source: string): Promise<Frontmatter> => {
+  const { frontmatter } = await compileMDX<Frontmatter>({
+    source,
+    options: { parseFrontmatter: true }
+  });
+  return frontmatter;
 };
 
 /* 

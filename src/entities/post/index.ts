@@ -1,3 +1,4 @@
-import { getAllPosts } from "./model/post";
+import { getAllPosts, getFrontmatter } from "./model/post";
 
-export { getAllPosts };
+export * from "./model/post.type";
+export { getAllPosts, getFrontmatter };

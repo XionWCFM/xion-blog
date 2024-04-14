@@ -7,7 +7,7 @@ import rehypePrettyCode from "rehype-pretty-code";
 import rehypeSlug from "rehype-slug";
 import remarkBreaks from "remark-breaks";
 
-import { getAllPosts } from "~/entities/post";
+import { Frontmatter, getAllPosts } from "~/entities/post";
 
 const markdownsource = `
  # hello world
@@ -19,16 +19,13 @@ export default async function RemoteMdxPage() {
   const filePath = path.join(process.cwd(), "posts", "post-01.mdx");
   const markdownsource = fs.readFileSync(filePath, "utf8");
   const hi = getAllPosts();
-  const { content, frontmatter } = await compileMDX({
+  const { content, frontmatter } = await compileMDX<Frontmatter>({
     source: markdownsource,
     options: {
-      parseFrontmatter: true,
-      mdxOptions: {
-        remarkPlugins: [],
-        rehypePlugins: []
-      }
+      parseFrontmatter: true
     }
   });
+
   return (
     <div className=" prose dark:prose-dark">
       <MDXRemote
