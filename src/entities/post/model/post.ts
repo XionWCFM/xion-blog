@@ -25,6 +25,23 @@ const readDirectory = (directory: string): Post[] => {
   }, []);
 };
 
+const findPostFile = (directory: string, filePath: string[]): Post | null => {
+  const fullPath = path.join(directory, ...filePath);
+  const fileExtensions = [".md", ".mdx"];
+  for (const ext of fileExtensions) {
+    const fullFilePath = `${fullPath}${ext}`;
+    if (fs.existsSync(fullFilePath)) {
+      const content = fs.readFileSync(fullFilePath, "utf8");
+      return { content, filePath };
+    }
+  }
+  return null;
+};
+
+export const getPost = (filePath: string[]): Post | null => {
+  return findPostFile(postsDirectory, filePath);
+};
+
 export const getFrontmatter = async (source: string): Promise<Frontmatter> => {
   const { frontmatter } = await compileMDX<Frontmatter>({
     source,

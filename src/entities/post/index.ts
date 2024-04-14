@@ -1,4 +1,5 @@
-import { getAllPosts, getFrontmatter } from "./model/post";
+import { getAllPosts, getFrontmatter, getPost } from "./model/post";
 
 export * from "./model/post.type";
-export { getAllPosts, getFrontmatter };
+export * from "./ui/mdx-remote";
+export { getAllPosts, getFrontmatter, getPost };
