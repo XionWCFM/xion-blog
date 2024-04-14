@@ -1,8 +1,5 @@
 name: XionHub CI/CD
-on:
-  pull_request:
-    branches:
-      - main
+on: [push]
 
 env:
   FIREBASE_API_KEY: ${{ secrets.FIREBASE_API_KEY }}
