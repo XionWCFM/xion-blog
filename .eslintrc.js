@@ -21,8 +21,7 @@ module.exports = {
     "plugin:@typescript-eslint/recommended",
     "plugin:react/recommended",
     "plugin:react-hooks/recommended",
-    "plugin:jsx-a11y/recommended",
-    "plugin:storybook/recommended"
+    "plugin:jsx-a11y/recommended"
   ],
   plugins: ["@typescript-eslint", "jsx-a11y", "react", "react-hooks"],
   ignorePatterns: ["dist", ".eslintrc.js"],
