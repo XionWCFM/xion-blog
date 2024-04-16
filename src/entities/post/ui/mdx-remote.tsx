@@ -11,7 +11,7 @@ interface MdxRemoteProps {
 }
 export const MdxRemote = ({ source }: MdxRemoteProps) => {
   return (
-    <div className="prose dark:prose-invert">
+    <div className="prose dark:prose-invert min-w-[360px] md:min-w-768  xl:min-w-1024 w-full ">
       <MDXRemote
         source={source}
         components={MDXComponents}

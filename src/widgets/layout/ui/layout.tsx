@@ -1,6 +1,7 @@
-import React from 'react';
-import { Header } from '../../header/ui/header';
-import { Footer } from '../../footer/ui/footer';
+import React from "react";
+
+import { Footer } from "../../footer/ui/footer";
+import { Header } from "../../header/ui/header";
 
 interface indexProps extends React.PropsWithChildren {}
 

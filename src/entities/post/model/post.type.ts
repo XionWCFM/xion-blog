@@ -1,7 +1,7 @@
-export interface Post {
+export type Post = {
   content: string;
   filePath: string[];
-}
+};
 
 export type Categories = "react" | "typescript" | "next" | "css" | "yarnberry";
 
