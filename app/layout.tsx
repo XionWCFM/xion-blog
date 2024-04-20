@@ -11,6 +11,7 @@ import { Layout } from "~/widgets/layout";
 import { ENV } from "~/shared/constant/environment/env";
 
 import "../src/app/style/globals.css";
+import AutoRefresh from "./auto-refresh";
 
 export const metadata: Metadata = {
   title: {
@@ -29,15 +30,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${XION_NEXT_FONT.className} `}>
-        <Providers>
-          <Layout>{children}</Layout>
-        </Providers>
-        <Analytics />
-        <GoogleTagManager gtmId={ENV.gtmId} />
-        <GoogleAnalytics gaId={ENV.gaId} />
-      </body>
-    </html>
+    <AutoRefresh>
+      <html lang="en">
+        <body className={`${XION_NEXT_FONT.className} `}>
+          <Providers>
+            <Layout>{children}</Layout>
+          </Providers>
+          <Analytics />
+          <GoogleTagManager gtmId={ENV.gtmId} />
+          <GoogleAnalytics gaId={ENV.gaId} />
+        </body>
+      </html>
+    </AutoRefresh>
   );
 }

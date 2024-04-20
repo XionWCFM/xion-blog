@@ -27,6 +27,6 @@
     ".next/types/**/*.ts",
     "jest.setup.js",
     "jest.config.mjs"
-  ],
+, "watcher.js"  ],
   "exclude": ["node_modules", ".next", ".husky", ".vscode"]
 }
