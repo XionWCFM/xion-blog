@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "run-p next-dev watch-content",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
@@ -12,7 +12,9 @@
     "hygen": "hygen",
     "lighthouse": "yarn lhci autorun",
     "test": "jest --watch",
-    "test:all": "jest --maxWorkers 4 --cache"
+    "test:all": "jest --maxWorkers 4 --cache",
+    "next-dev": "next dev",
+    "watch-content": "node ./watcher.cjs"
   },
   "dependencies": {
     "@next/third-parties": "^14.1.0",
@@ -55,6 +57,7 @@
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "@types/ws": "^8",
     "@typescript-eslint/eslint-plugin": "^7.6.0",
     "@typescript-eslint/parser": "^7.6.0",
     "@xionhub/eslint": "^0.0.5",
@@ -63,6 +66,7 @@
     "@xionhub/logger": "^0.1.0",
     "@xionhub/tailwind-plugin": "^0.1.0",
     "autoprefixer": "^10.0.1",
+    "chokidar": "^3.6.0",
     "clsx": "^2.1.0",
     "eslint": "^8",
     "eslint-config-next": "14.1.0",
@@ -77,6 +81,7 @@
     "lighthouse": "^11.7.1",
     "markdown-wasm": "^1.2.0",
     "next-mdx-remote": "^4.4.1",
+    "npm-run-all": "^4.1.5",
     "postcss": "^8",
     "prettier": "^3.2.5",
     "rehype-autolink-headings": "^7.1.0",
@@ -91,7 +96,8 @@
     "tailwindcss": "^3.3.0",
     "ts-jest": "^29.1.2",
     "ts-node": "^10.9.2",
-    "typescript": "5.3.3"
+    "typescript": "5.3.3",
+    "ws": "^8.16.0"
   },
   "packageManager": "yarn@4.1.0",
   "dependenciesMeta": {
