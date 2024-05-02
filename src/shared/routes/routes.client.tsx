@@ -3,7 +3,7 @@
 import { useParams, usePathname, useRouter, useSearchParams } from "next/navigation";
 import { useMemo } from "react";
 
-import { DefaultRouterType, RoutesQueryAndPath, parseSearchParams } from "./router.util";
+import { type DefaultRouterType, type RoutesQueryAndPath, parseSearchParams } from "./routes.util";
 
 export const useInternalRouter = <T extends DefaultRouterType = DefaultRouterType>() => {
   const router = useRouter();
@@ -24,9 +24,11 @@ export const useInternalRouter = <T extends DefaultRouterType = DefaultRouterTyp
       refresh: () => router.refresh(),
       prefetch: (href: string) => router.prefetch(href),
       pathname: pathname,
-      searchParams: serachParams.toString(),
-      query: parseSearchParams<RoutesQueryAndPath<T>["query"]>(serachParams.toString()),
-      get: (qs: string) => serachParams.get(qs),
+      searchParams: serachParams ? serachParams.toString() : "",
+      query: parseSearchParams<RoutesQueryAndPath<T>["query"]>(
+        serachParams ? serachParams.toString() : ""
+      ),
+      get: (qs: string) => (serachParams ? serachParams.get(qs) : ""),
       params: params,
       href: href,
       hostname: hostname,
