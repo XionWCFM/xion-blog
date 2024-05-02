@@ -47,6 +47,7 @@ const RAW_RUNTIME_STATE =
           ["@types/jest", "npm:29.5.12"],\
           ["@types/mdx", "npm:2.0.13"],\
           ["@types/node", "npm:20.11.16"],\
+          ["@types/qs", "npm:6.9.15"],\
           ["@types/react", "npm:18.2.52"],\
           ["@types/react-dom", "npm:18.2.18"],\
           ["@types/ws", "npm:8.5.10"],\
@@ -89,6 +90,7 @@ const RAW_RUNTIME_STATE =
           ["npm-run-all", "npm:4.1.5"],\
           ["postcss", "npm:8.4.33"],\
           ["prettier", "npm:3.2.5"],\
+          ["qs", "npm:6.12.1"],\
           ["react", "npm:18.2.0"],\
           ["react-dom", "virtual:a42916aa7819a4f00cc7c9847657bc85ba9c87fb95677bfbf399c703d282b509ad3be503919d7579df0ccf7505768c37e7518f9a36d78bd9a7bcf8ac987a17fa#npm:18.2.0"],\
           ["rehype-autolink-headings", "npm:7.1.0"],\
@@ -4450,6 +4452,15 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/@types-prop-types-npm-15.7.11-a0a5a0025c-e53423cf9d.zip/node_modules/@types/prop-types/",\
         "packageDependencies": [\
           ["@types/prop-types", "npm:15.7.11"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@types/qs", [\
+      ["npm:6.9.15", {\
+        "packageLocation": "./.yarn/cache/@types-qs-npm-6.9.15-aae1b1e2f7-49c5ff75ca.zip/node_modules/@types/qs/",\
+        "packageDependencies": [\
+          ["@types/qs", "npm:6.9.15"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -14763,6 +14774,14 @@ const RAW_RUNTIME_STATE =
           ["side-channel", "npm:1.0.4"]\
         ],\
         "linkType": "HARD"\
+      }],\
+      ["npm:6.12.1", {\
+        "packageLocation": "./.yarn/cache/qs-npm-6.12.1-8172168073-439e6d7c65.zip/node_modules/qs/",\
+        "packageDependencies": [\
+          ["qs", "npm:6.12.1"],\
+          ["side-channel", "npm:1.0.6"]\
+        ],\
+        "linkType": "HARD"\
       }]\
     ]],\
     ["querystringify", [\
@@ -17967,6 +17986,7 @@ const RAW_RUNTIME_STATE =
           ["@types/jest", "npm:29.5.12"],\
           ["@types/mdx", "npm:2.0.13"],\
           ["@types/node", "npm:20.11.16"],\
+          ["@types/qs", "npm:6.9.15"],\
           ["@types/react", "npm:18.2.52"],\
           ["@types/react-dom", "npm:18.2.18"],\
           ["@types/ws", "npm:8.5.10"],\
@@ -18009,6 +18029,7 @@ const RAW_RUNTIME_STATE =
           ["npm-run-all", "npm:4.1.5"],\
           ["postcss", "npm:8.4.33"],\
           ["prettier", "npm:3.2.5"],\
+          ["qs", "npm:6.12.1"],\
           ["react", "npm:18.2.0"],\
           ["react-dom", "virtual:a42916aa7819a4f00cc7c9847657bc85ba9c87fb95677bfbf399c703d282b509ad3be503919d7579df0ccf7505768c37e7518f9a36d78bd9a7bcf8ac987a17fa#npm:18.2.0"],\
           ["rehype-autolink-headings", "npm:7.1.0"],\

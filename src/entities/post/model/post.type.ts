@@ -3,9 +3,9 @@ export type Post = {
   filePath: string[];
 };
 
-export type Categories = "react" | "typescript" | "next" | "css" | "yarnberry";
+export const CategiriesList = ["react", "typescript", "next", "css", "yarnberry"];
 
-export const CategiriesList: Categories[] = ["react", "typescript", "next", "css", "yarnberry"];
+export type Categories = (typeof CategiriesList)[number];
 
 export interface Frontmatter {
   title: string;
