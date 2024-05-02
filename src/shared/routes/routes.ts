@@ -25,12 +25,7 @@ export const Routes = {
   useRouter: <T extends DefaultRouterType = DefaultRouterType>() => useInternalRouter<T>(),
   home: createRoutes("/"),
   posts: createRoutes<{
-    pathname: [["slug", "nakjoon" | "first-post"]];
+    pathname: [["slug", "first-post" | "second-post"]];
     catchAll: "slug";
   }>("/posts")
-};
-
-const Hi = () => {
-  const router = Routes.posts.useRouter();
-  router.push(Routes.posts.path({ pathname: ["nakjoon"] }));
 };
